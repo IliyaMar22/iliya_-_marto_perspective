@@ -1,0 +1,241 @@
+/* Lando Norris Inspired Design System */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+
+:root {
+  /* Colors */
+  --color-lime: #D2FF00;
+  --color-dark-green: #0A1F0A;
+  --color-white: #FFFFFF;
+  --color-gray: #808080;
+  --color-black: #000000;
+  --color-cyan: #82E6FF;
+  --color-pink: #FF6B9D;
+  --color-orange: #FFB800;
+  
+  /* Gradients */
+  --gradient-lime: linear-gradient(135deg, #D2FF00 0%, #82E6FF 100%);
+  --gradient-dark: linear-gradient(180deg, #000000 0%, #0A1F0A 100%);
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: clamp(16px, 1vw, 18px);
+  background: var(--gradient-dark);
+  color: var(--color-white);
+  overflow-x: hidden;
+}
+
+/* Typography */
+.text-impact {
+  font-size: clamp(3rem, 8vw, 8rem);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  background: var(--gradient-lime);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-hero {
+  font-size: clamp(2rem, 5vw, 5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+.text-subtitle {
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-lime);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-cyan);
+}
+
+/* Smooth scroll sections */
+.scroll-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(10, 31, 10, 0.6);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(210, 255, 0, 0.2);
+  border-radius: 16px;
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(210, 255, 0, 0.3);
+  border-radius: 16px;
+}
+
+/* Glow effects */
+.glow-lime {
+  box-shadow: 0 0 20px rgba(210, 255, 0, 0.3),
+              0 0 40px rgba(210, 255, 0, 0.2),
+              0 0 60px rgba(210, 255, 0, 0.1);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(130, 230, 255, 0.3),
+              0 0 40px rgba(130, 230, 255, 0.2);
+}
+
+/* Button styles */
+.btn-primary {
+  background: var(--color-lime);
+  color: var(--color-black);
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(210, 255, 0, 0.4);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 30px rgba(210, 255, 0, 0.6);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-lime);
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 2px solid var(--color-lime);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--color-lime);
+  color: var(--color-black);
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent, rgba(210, 255, 0, 0.3), transparent);
+  background-size: 1000px 100%;
+  animation: shimmer 3s infinite;
+}
+
+/* Hero section */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-title {
+  position: relative;
+  z-index: 10;
+}
+
+/* Grid pattern background */
+.grid-pattern {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(210, 255, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(210, 255, 0, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+  mask-image: radial-gradient(circle at center, black, transparent 80%);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .text-impact {
+    font-size: clamp(2rem, 10vw, 4rem);
+  }
+  
+  .hero-section {
+    padding: 1rem;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+

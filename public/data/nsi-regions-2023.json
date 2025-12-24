@@ -1,0 +1,539 @@
+{
+  "year": 2023,
+  "source": "National Statistical Institute (NSI) - Bulgaria",
+  "regions": [
+    {
+      "id": "bg411",
+      "nuts_code": "BG411",
+      "name": "София (столица)",
+      "name_en": "Sofia (capital)",
+      "coordinates": [23.3219, 42.6977],
+      "parent_region": "BG41 - Yugozapaden",
+      "metrics": {
+        "gva_agriculture": 64,
+        "gva_industry": 9162,
+        "gva_services": 60368,
+        "gva_total": 69594,
+        "gdp": 79371,
+        "gdp_per_capita": 61833,
+        "population": 1283764,
+        "industries": ["IT", "Finance", "Public Administration", "Trade"]
+      },
+      "developmentLevel": "high"
+    },
+    {
+      "id": "bg331",
+      "nuts_code": "BG331",
+      "name": "Варна",
+      "name_en": "Varna",
+      "coordinates": [27.9147, 43.2141],
+      "parent_region": "BG33 - Severoiztochen",
+      "metrics": {
+        "gva_agriculture": 195,
+        "gva_industry": 2644,
+        "gva_services": 7380,
+        "gva_total": 10219,
+        "gdp": 11655,
+        "gdp_per_capita": 26946,
+        "population": 432437,
+        "industries": ["Tourism", "Shipping", "Logistics", "Trade"]
+      },
+      "developmentLevel": "high"
+    },
+    {
+      "id": "bg341",
+      "nuts_code": "BG341",
+      "name": "Бургас",
+      "name_en": "Burgas",
+      "coordinates": [27.4626, 42.5048],
+      "parent_region": "BG34 - Yugoiztochen",
+      "metrics": {
+        "gva_agriculture": 208,
+        "gva_industry": 1725,
+        "gva_services": 5483,
+        "gva_total": 7416,
+        "gdp": 8458,
+        "gdp_per_capita": 22169,
+        "population": 381522,
+        "industries": ["Oil Refining", "Tourism", "Fishing", "Manufacturing"]
+      },
+      "developmentLevel": "medium"
+    },
+    {
+      "id": "bg421",
+      "nuts_code": "BG421",
+      "name": "Пловдив",
+      "name_en": "Plovdiv",
+      "coordinates": [24.7453, 42.1354],
+      "parent_region": "BG42 - Yuzhen tsentralen",
+      "metrics": {
+        "gva_agriculture": 299,
+        "gva_industry": 4281,
+        "gva_services": 7738,
+        "gva_total": 12318,
+        "gdp": 14048,
+        "gdp_per_capita": 22209,
+        "population": 632589,
+        "industries": ["Manufacturing", "Food Processing", "Textiles", "Trade"]
+      },
+      "developmentLevel": "medium"
+    },
+    {
+      "id": "bg323",
+      "nuts_code": "BG323",
+      "name": "Русе",
+      "name_en": "Ruse",
+      "coordinates": [25.9654, 43.8564],
+      "parent_region": "BG32 - Severen tsentralen",
+      "metrics": {
+        "gva_agriculture": 186,
+        "gva_industry": 1113,
+        "gva_services": 2288,
+        "gva_total": 3587,
+        "gdp": 4091,
+        "gdp_per_capita": 21678,
+        "population": 188732,
+        "industries": ["Manufacturing", "Agriculture", "Trade", "Transport"]
+      },
+      "developmentLevel": "medium"
+    },
+    {
+      "id": "bg344",
+      "nuts_code": "BG344",
+      "name": "Стара Загора",
+      "name_en": "Stara Zagora",
+      "coordinates": [25.6394, 42.4258],
+      "parent_region": "BG34 - Yugoiztochen",
+      "metrics": {
+        "gva_agriculture": 194,
+        "gva_industry": 6104,
+        "gva_services": 3011,
+        "gva_total": 9309,
+        "gdp": 10617,
+        "gdp_per_capita": 36470,
+        "population": 291142,
+        "industries": ["Energy", "Manufacturing", "Mining", "Agriculture"]
+      },
+      "developmentLevel": "high"
+    },
+    {
+      "id": "bg321",
+      "nuts_code": "BG321",
+      "name": "Велико Търново",
+      "name_en": "Veliko Tarnovo",
+      "coordinates": [25.6294, 43.0757],
+      "parent_region": "BG32 - Severen tsentralen",
+      "metrics": {
+        "gva_agriculture": 199,
+        "gva_industry": 1001,
+        "gva_services": 2395,
+        "gva_total": 3595,
+        "gdp": 4101,
+        "gdp_per_capita": 20187,
+        "population": 203262,
+        "industries": ["Tourism", "Education", "Manufacturing", "Agriculture"]
+      },
+      "developmentLevel": "medium"
+    },
+    {
+      "id": "bg322",
+      "nuts_code": "BG322",
+      "name": "Габрово",
+      "name_en": "Gabrovo",
+      "coordinates": [25.3188, 42.8709],
+      "parent_region": "BG32 - Severen tsentralen",
+      "metrics": {
+        "gva_agriculture": 78,
+        "gva_industry": 896,
+        "gva_services": 1059,
+        "gva_total": 2033,
+        "gdp": 2318,
+        "gdp_per_capita": 24297,
+        "population": 95402,
+        "industries": ["Manufacturing", "Textiles", "Tourism", "Education"]
+      },
+      "developmentLevel": "medium"
+    },
+    {
+      "id": "bg413",
+      "nuts_code": "BG413",
+      "name": "Благоевград",
+      "name_en": "Blagoevgrad",
+      "coordinates": [23.0945, 42.0116],
+      "parent_region": "BG41 - Yugozapaden",
+      "metrics": {
+        "gva_agriculture": 230,
+        "gva_industry": 1029,
+        "gva_services": 2890,
+        "gva_total": 4148,
+        "gdp": 4731,
+        "gdp_per_capita": 16449,
+        "population": 287576,
+        "industries": ["Tourism", "Education", "Manufacturing", "Agriculture"]
+      },
+      "developmentLevel": "low"
+    },
+    {
+      "id": "bg415",
+      "nuts_code": "BG415",
+      "name": "Кюстендил",
+      "name_en": "Kyustendil",
+      "coordinates": [22.6894, 42.2858],
+      "parent_region": "BG41 - Yugozapaden",
+      "metrics": {
+        "gva_agriculture": 91,
+        "gva_industry": 386,
+        "gva_services": 949,
+        "gva_total": 1426,
+        "gdp": 1626,
+        "gdp_per_capita": 15030,
+        "population": 10821,
+        "industries": ["Agriculture", "Tourism", "Manufacturing"]
+      },
+      "developmentLevel": "low"
+    },
+    {
+      "id": "bg311",
+      "nuts_code": "BG311",
+      "name": "Видин",
+      "name_en": "Vidin",
+      "coordinates": [22.8778, 43.9859],
+      "parent_region": "BG31 - Severozapaden",
+      "metrics": {
+        "gva_agriculture": 114,
+        "gva_industry": 123,
+        "gva_services": 718,
+        "gva_total": 955,
+        "gdp": 1089,
+        "gdp_per_capita": 15071,
+        "population": 72297,
+        "industries": ["Agriculture", "Manufacturing", "Trade"]
+      },
+      "developmentLevel": "low"
+    },
+    {
+      "id": "bg313",
+      "nuts_code": "BG313",
+      "name": "Враца",
+      "name_en": "Vratsa",
+      "coordinates": [23.5483, 43.2103],
+      "parent_region": "BG31 - Severozapaden",
+      "metrics": {
+        "gva_agriculture": 161,
+        "gva_industry": 2097,
+        "gva_services": 1266,
+        "gva_total": 3524,
+        "gdp": 4019,
+        "gdp_per_capita": 27113,
+        "population": 148175,
+        "industries": ["Manufacturing", "Mining", "Agriculture"]
+      },
+      "developmentLevel": "medium"
+    },
+    {
+      "id": "bg315",
+      "nuts_code": "BG315",
+      "name": "Ловеч",
+      "name_en": "Lovech",
+      "coordinates": [24.7144, 43.1367],
+      "parent_region": "BG31 - Severozapaden",
+      "metrics": {
+        "gva_agriculture": 119,
+        "gva_industry": 569,
+        "gva_services": 1095,
+        "gva_total": 1783,
+        "gdp": 2033,
+        "gdp_per_capita": 18024,
+        "population": 112789,
+        "industries": ["Manufacturing", "Agriculture", "Tourism"]
+      },
+      "developmentLevel": "medium"
+    },
+    {
+      "id": "bg312",
+      "nuts_code": "BG312",
+      "name": "Монтана",
+      "name_en": "Montana",
+      "coordinates": [23.2267, 43.4092],
+      "parent_region": "BG31 - Severozapaden",
+      "metrics": {
+        "gva_agriculture": 178,
+        "gva_industry": 372,
+        "gva_services": 980,
+        "gva_total": 1530,
+        "gdp": 1745,
+        "gdp_per_capita": 15127,
+        "population": 115355,
+        "industries": ["Agriculture", "Manufacturing", "Mining"]
+      },
+      "developmentLevel": "low"
+    },
+    {
+      "id": "bg314",
+      "nuts_code": "BG314",
+      "name": "Плевен",
+      "name_en": "Pleven",
+      "coordinates": [24.6167, 43.4170],
+      "parent_region": "BG31 - Severozapaden",
+      "metrics": {
+        "gva_agriculture": 196,
+        "gva_industry": 949,
+        "gva_services": 2257,
+        "gva_total": 3401,
+        "gdp": 3879,
+        "gdp_per_capita": 17703,
+        "population": 219015,
+        "industries": ["Manufacturing", "Agriculture", "Trade"]
+      },
+      "developmentLevel": "medium"
+    },
+    {
+      "id": "bg332",
+      "nuts_code": "BG332",
+      "name": "Добрич",
+      "name_en": "Dobrich",
+      "coordinates": [27.8272, 43.5726],
+      "parent_region": "BG33 - Severoiztochen",
+      "metrics": {
+        "gva_agriculture": 272,
+        "gva_industry": 543,
+        "gva_services": 1385,
+        "gva_total": 2200,
+        "gdp": 2509,
+        "gdp_per_capita": 17075,
+        "population": 146907,
+        "industries": ["Agriculture", "Food Processing", "Trade"]
+      },
+      "developmentLevel": "medium"
+    },
+    {
+      "id": "bg342",
+      "nuts_code": "BG342",
+      "name": "Сливен",
+      "name_en": "Sliven",
+      "coordinates": [26.3150, 42.6824],
+      "parent_region": "BG34 - Yugoiztochen",
+      "metrics": {
+        "gva_agriculture": 136,
+        "gva_industry": 483,
+        "gva_services": 1397,
+        "gva_total": 2015,
+        "gdp": 2298,
+        "gdp_per_capita": 13493,
+        "population": 170334,
+        "industries": ["Textiles", "Manufacturing", "Agriculture"]
+      },
+      "developmentLevel": "low"
+    },
+    {
+      "id": "bg334",
+      "nuts_code": "BG334",
+      "name": "Търговище",
+      "name_en": "Targovishte",
+      "coordinates": [26.5722, 43.2468],
+      "parent_region": "BG33 - Severoiztochen",
+      "metrics": {
+        "gva_agriculture": 165,
+        "gva_industry": 525,
+        "gva_services": 891,
+        "gva_total": 1581,
+        "gdp": 1803,
+        "gdp_per_capita": 18802,
+        "population": 95886,
+        "industries": ["Manufacturing", "Agriculture", "Trade"]
+      },
+      "developmentLevel": "medium"
+    },
+    {
+      "id": "bg333",
+      "nuts_code": "BG333",
+      "name": "Шумен",
+      "name_en": "Shumen",
+      "coordinates": [26.9258, 43.2706],
+      "parent_region": "BG33 - Severoiztochen",
+      "metrics": {
+        "gva_agriculture": 229,
+        "gva_industry": 722,
+        "gva_services": 1298,
+        "gva_total": 2248,
+        "gdp": 2564,
+        "gdp_per_capita": 17129,
+        "population": 149685,
+        "industries": ["Manufacturing", "Agriculture", "Food Processing"]
+      },
+      "developmentLevel": "medium"
+    },
+    {
+      "id": "bg424",
+      "nuts_code": "BG424",
+      "name": "Смолян",
+      "name_en": "Smolyan",
+      "coordinates": [24.7011, 41.5774],
+      "parent_region": "BG42 - Yuzhen tsentralen",
+      "metrics": {
+        "gva_agriculture": 78,
+        "gva_industry": 495,
+        "gva_services": 811,
+        "gva_total": 1384,
+        "gdp": 1578,
+        "gdp_per_capita": 17016,
+        "population": 92756,
+        "industries": ["Tourism", "Mining", "Manufacturing"]
+      },
+      "developmentLevel": "medium"
+    },
+    {
+      "id": "bg422",
+      "nuts_code": "BG422",
+      "name": "Хасково",
+      "name_en": "Haskovo",
+      "coordinates": [25.5553, 41.9344],
+      "parent_region": "BG42 - Yuzhen tsentralen",
+      "metrics": {
+        "gva_agriculture": 245,
+        "gva_industry": 890,
+        "gva_services": 1650,
+        "gva_total": 2785,
+        "gdp": 3176,
+        "gdp_per_capita": 13854,
+        "population": 229319,
+        "industries": ["Agriculture", "Food Processing", "Manufacturing", "Trade"]
+      },
+      "developmentLevel": "medium"
+    },
+    {
+      "id": "bg423",
+      "nuts_code": "BG423",
+      "name": "Пазарджик",
+      "name_en": "Pazardzhik",
+      "coordinates": [24.3333, 42.1833],
+      "parent_region": "BG42 - Yuzhen tsentralen",
+      "metrics": {
+        "gva_agriculture": 298,
+        "gva_industry": 1450,
+        "gva_services": 2120,
+        "gva_total": 3868,
+        "gdp": 4411,
+        "gdp_per_capita": 16324,
+        "population": 270179,
+        "industries": ["Agriculture", "Food Processing", "Manufacturing", "Mining"]
+      },
+      "developmentLevel": "medium"
+    },
+    {
+      "id": "bg425",
+      "nuts_code": "BG425",
+      "name": "Кърджали",
+      "name_en": "Kardzhali",
+      "coordinates": [25.3781, 41.6486],
+      "parent_region": "BG42 - Yuzhen tsentralen",
+      "metrics": {
+        "gva_agriculture": 145,
+        "gva_industry": 680,
+        "gva_services": 1098,
+        "gva_total": 1923,
+        "gdp": 2194,
+        "gdp_per_capita": 14875,
+        "population": 147453,
+        "industries": ["Mining", "Energy", "Agriculture", "Tourism"]
+      },
+      "developmentLevel": "low"
+    },
+    {
+      "id": "bg412",
+      "nuts_code": "BG412",
+      "name": "София",
+      "name_en": "Sofia Province",
+      "coordinates": [23.5, 42.7],
+      "parent_region": "BG41 - Yugozapaden",
+      "metrics": {
+        "gva_agriculture": 180,
+        "gva_industry": 1250,
+        "gva_services": 2450,
+        "gva_total": 3880,
+        "gdp": 4424,
+        "gdp_per_capita": 18950,
+        "population": 233429,
+        "industries": ["Manufacturing", "Agriculture", "Trade", "Tourism"]
+      },
+      "developmentLevel": "medium"
+    },
+    {
+      "id": "bg414",
+      "nuts_code": "BG414",
+      "name": "Перник",
+      "name_en": "Pernik",
+      "coordinates": [23.0333, 42.6],
+      "parent_region": "BG41 - Yugozapaden",
+      "metrics": {
+        "gva_agriculture": 65,
+        "gva_industry": 780,
+        "gva_services": 1020,
+        "gva_total": 1865,
+        "gdp": 2127,
+        "gdp_per_capita": 16890,
+        "population": 125971,
+        "industries": ["Mining", "Energy", "Manufacturing", "Trade"]
+      },
+      "developmentLevel": "medium"
+    },
+    {
+      "id": "bg343",
+      "nuts_code": "BG343",
+      "name": "Ямбол",
+      "name_en": "Yambol",
+      "coordinates": [26.5028, 42.4844],
+      "parent_region": "BG34 - Yugoiztochen",
+      "metrics": {
+        "gva_agriculture": 175,
+        "gva_industry": 520,
+        "gva_services": 990,
+        "gva_total": 1685,
+        "gdp": 1921,
+        "gdp_per_capita": 15234,
+        "population": 126111,
+        "industries": ["Agriculture", "Food Processing", "Manufacturing", "Trade"]
+      },
+      "developmentLevel": "low"
+    },
+    {
+      "id": "bg324",
+      "nuts_code": "BG324",
+      "name": "Разград",
+      "name_en": "Razgrad",
+      "coordinates": [26.5225, 43.5272],
+      "parent_region": "BG32 - Severen tsentralen",
+      "metrics": {
+        "gva_agriculture": 198,
+        "gva_industry": 645,
+        "gva_services": 1050,
+        "gva_total": 1893,
+        "gdp": 2159,
+        "gdp_per_capita": 17845,
+        "population": 121009,
+        "industries": ["Agriculture", "Food Processing", "Manufacturing", "Trade"]
+      },
+      "developmentLevel": "medium"
+    },
+    {
+      "id": "bg325",
+      "nuts_code": "BG325",
+      "name": "Силистра",
+      "name_en": "Silistra",
+      "coordinates": [27.2667, 44.1167],
+      "parent_region": "BG32 - Severen tsentralen",
+      "metrics": {
+        "gva_agriculture": 210,
+        "gva_industry": 380,
+        "gva_services": 820,
+        "gva_total": 1410,
+        "gdp": 1608,
+        "gdp_per_capita": 14456,
+        "population": 111193,
+        "industries": ["Agriculture", "Fishing", "Food Processing", "Trade"]
+      },
+      "developmentLevel": "low"
+    }
+  ]
+}
+

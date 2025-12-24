@@ -1,0 +1,97 @@
+{
+  "year": 2024,
+  "source": "National Statistical Institute (NSI) - Bulgaria",
+  "note": "Preliminary data. '..' indicates confidential data, '-' indicates no case registered",
+  "unit": "Thousand EUR",
+  "total": {
+    "region": "Bulgaria Total",
+    "total": 804844,
+    "business_enterprises": 524112,
+    "government": 217066,
+    "higher_education": 59737,
+    "non_profit_institutions": 3929
+  },
+  "macro_regions": [
+    {
+      "region": "Severna i Yugoiztochna Bulgaria",
+      "region_en": "Northern and Southeastern Bulgaria",
+      "nuts_code": "BG3+BG4",
+      "total": 114714,
+      "business_enterprises": 70974,
+      "government": 27304,
+      "higher_education": 16260,
+      "non_profit_institutions": 176
+    },
+    {
+      "region": "Severozapaden",
+      "region_en": "Northwestern",
+      "nuts_code": "BG31",
+      "total": 19012,
+      "business_enterprises": 9487,
+      "government": 7796,
+      "higher_education": null,
+      "non_profit_institutions": null
+    },
+    {
+      "region": "Severen tsentralen",
+      "region_en": "North Central",
+      "nuts_code": "BG32",
+      "total": 22630,
+      "business_enterprises": 20698,
+      "government": null,
+      "higher_education": null,
+      "non_profit_institutions": 0
+    },
+    {
+      "region": "Severoiztochen",
+      "region_en": "Northeastern",
+      "nuts_code": "BG33",
+      "total": 39058,
+      "business_enterprises": 17992,
+      "government": 11286,
+      "higher_education": 9638,
+      "non_profit_institutions": 142
+    },
+    {
+      "region": "Yugoiztochen",
+      "region_en": "Southeastern",
+      "nuts_code": "BG34",
+      "total": 34014,
+      "business_enterprises": 22797,
+      "government": null,
+      "higher_education": 3651,
+      "non_profit_institutions": null
+    },
+    {
+      "region": "Yugozapadna i Yuzhna tsentralna Bulgaria",
+      "region_en": "Southwestern and South Central Bulgaria",
+      "nuts_code": "BG4+BG5",
+      "total": 690130,
+      "business_enterprises": 453138,
+      "government": 189762,
+      "higher_education": 43477,
+      "non_profit_institutions": 3753
+    },
+    {
+      "region": "Yugozapaden",
+      "region_en": "Southwestern",
+      "nuts_code": "BG41",
+      "total": 627147,
+      "business_enterprises": 414683,
+      "government": 177792,
+      "higher_education": null,
+      "non_profit_institutions": null
+    },
+    {
+      "region": "Yuzhen tsentralen",
+      "region_en": "South Central",
+      "nuts_code": "BG42",
+      "total": 62983,
+      "business_enterprises": 38455,
+      "government": 11970,
+      "higher_education": null,
+      "non_profit_institutions": null
+    }
+  ]
+}
+

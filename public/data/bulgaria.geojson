@@ -1,0 +1,76 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "sofia-city",
+      "properties": {
+        "name": "София (столица)",
+        "gdp": 28500,
+        "population": 1236000
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [23.3219, 42.6977]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "plovdiv",
+      "properties": {
+        "name": "Пловдив",
+        "gdp": 18200,
+        "population": 346893
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [24.7453, 42.1354]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "varna",
+      "properties": {
+        "name": "Варна",
+        "gdp": 19800,
+        "population": 334870
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [27.9147, 43.2141]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "burgas",
+      "properties": {
+        "name": "Бургас",
+        "gdp": 17500,
+        "population": 202766
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [27.4626, 42.5048]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bulgaria-border",
+      "properties": {
+        "name": "Bulgaria",
+        "type": "border"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [22.3571, 44.2346],
+          [28.6124, 44.2346],
+          [28.6124, 41.2353],
+          [22.3571, 41.2353],
+          [22.3571, 44.2346]
+        ]]
+      }
+    }
+  ]
+}
+
