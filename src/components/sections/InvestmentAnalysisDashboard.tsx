@@ -492,32 +492,32 @@ const InvestmentAnalysisDashboard: React.FC = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 bg-black">
       {/* Header */}
       <div className="text-center mb-12">
         <div className="flex items-center justify-center mb-4">
           <span className="text-5xl mr-3">🎯</span>
-          <h1 className="text-4xl font-extrabold text-gray-800">Investment Analysis</h1>
+          <h1 className="text-4xl font-extrabold text-lime-400">Investment Analysis</h1>
         </div>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        <p className="text-subtitle max-w-3xl mx-auto">
           Monte Carlo Simulations & Investment Opportunity Assessment
         </p>
       </div>
 
       {/* Summary Flash Cards */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+        <h2 className="text-2xl font-bold text-lime-400 mb-6 flex items-center">
           <span className="mr-3">📊</span> Key Economic Indicators at a Glance
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4">
           {summaryCards.map((card, idx) => (
             <div
               key={idx}
-              className={`bg-gradient-to-br from-${card.color}-50 to-${card.color}-100 rounded-xl p-4 shadow-lg hover:shadow-xl transition-all hover:scale-105`}
+              className="glass-dark rounded-xl p-4 shadow-lg hover:shadow-xl transition-all hover:scale-105 border border-lime-400/20"
             >
               <div className="text-3xl mb-2">{card.icon}</div>
-              <div className="text-2xl font-bold text-gray-800">{card.value}</div>
-              <div className="text-sm font-medium text-gray-600">{card.title}</div>
+              <div className="text-2xl font-bold text-lime-400">{card.value}</div>
+              <div className="text-sm font-medium text-gray-400">{card.title}</div>
               <div className="text-xs text-gray-500">{card.subtitle}</div>
             </div>
           ))}
@@ -525,7 +525,7 @@ const InvestmentAnalysisDashboard: React.FC = () => {
       </section>
 
       {/* FDI Investment Opportunity Narrative */}
-      <section className="mb-12 bg-gradient-to-r from-green-600 to-emerald-700 rounded-2xl p-8 text-white shadow-xl">
+      <section className="mb-12 bg-gradient-to-r from-lime-400 to-green-600 rounded-2xl p-8 text-dark-green shadow-xl">
         <h2 className="text-3xl font-bold mb-6 flex items-center">
           <span className="mr-3">💎</span> Why Bulgaria? The Investment Case
         </h2>
@@ -570,9 +570,9 @@ const InvestmentAnalysisDashboard: React.FC = () => {
             </ul>
           </div>
         </div>
-        <div className="mt-8 p-6 bg-white/10 rounded-xl backdrop-blur-sm">
-          <h3 className="text-xl font-semibold mb-3 text-yellow-300">⚡ The Opportunity Cost Analysis</h3>
-          <p className="text-green-50">
+        <div className="mt-8 p-6 glass-dark rounded-xl border border-lime-400/20">
+          <h3 className="text-xl font-semibold mb-3 text-orange-400">⚡ The Opportunity Cost Analysis</h3>
+          <p className="text-dark-green">
             Our Monte Carlo simulations below demonstrate that Bulgaria offers a <strong>risk-adjusted return 
             premium of 3-4 percentage points</strong> over EU averages. For institutional investors, this 
             translates to millions in additional alpha. For SMEs, it means the difference between struggling 
@@ -584,7 +584,7 @@ const InvestmentAnalysisDashboard: React.FC = () => {
 
       {/* Monte Carlo Simulation Selection */}
       <section className="mb-8">
-        <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+        <h2 className="text-2xl font-bold text-lime-400 mb-6 flex items-center">
           <span className="mr-3">🎲</span> Monte Carlo Simulations
         </h2>
         
@@ -601,8 +601,8 @@ const InvestmentAnalysisDashboard: React.FC = () => {
               onClick={() => setActiveSimulation(sim.id as 1 | 2 | 3 | 4)}
               className={`px-6 py-3 rounded-xl font-semibold transition-all ${
                 activeSimulation === sim.id
-                  ? 'bg-green-600 text-white shadow-lg'
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  ? 'bg-lime-400 text-dark-green shadow-lg'
+                  : 'glass-dark text-gray-300 hover:bg-lime-400/20 border border-lime-400/10'
               }`}
             >
               <span className="mr-2">{sim.icon}</span>
@@ -612,13 +612,13 @@ const InvestmentAnalysisDashboard: React.FC = () => {
         </div>
 
         {/* Simulation Parameters */}
-        <div className="bg-gray-50 rounded-xl p-4 mb-6 flex flex-wrap gap-6 items-center">
+        <div className="glass-dark rounded-xl p-4 mb-6 flex flex-wrap gap-6 items-center border border-lime-400/20">
           <div>
-            <label className="block text-sm font-medium text-gray-600 mb-1">Simulations</label>
+            <label className="block text-sm font-medium text-gray-400 mb-1">Simulations</label>
             <select
               value={numSimulations}
               onChange={(e) => setNumSimulations(parseInt(e.target.value))}
-              className="px-4 py-2 border rounded-lg bg-white"
+              className="px-4 py-2 border border-lime-400/20 rounded-lg glass-dark text-white"
             >
               <option value={100}>100</option>
               <option value={500}>500</option>
@@ -628,11 +628,11 @@ const InvestmentAnalysisDashboard: React.FC = () => {
             </select>
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-600 mb-1">Time Horizon</label>
+            <label className="block text-sm font-medium text-gray-400 mb-1">Time Horizon</label>
             <select
               value={simulationYears}
               onChange={(e) => setSimulationYears(parseInt(e.target.value))}
-              className="px-4 py-2 border rounded-lg bg-white"
+              className="px-4 py-2 border border-lime-400/20 rounded-lg glass-dark text-white"
             >
               <option value={5}>5 Years</option>
               <option value={10}>10 Years</option>
@@ -640,7 +640,7 @@ const InvestmentAnalysisDashboard: React.FC = () => {
               <option value={20}>20 Years</option>
             </select>
           </div>
-          <div className="text-sm text-gray-500">
+          <div className="text-sm text-gray-400">
             <span className="font-medium">{numSimulations.toLocaleString()}</span> paths × <span className="font-medium">{simulationYears}</span> years
           </div>
         </div>
@@ -648,11 +648,11 @@ const InvestmentAnalysisDashboard: React.FC = () => {
 
       {/* Simulation 1: Regime-Switching GDP */}
       {activeSimulation === 1 && (
-        <section className="bg-white rounded-2xl shadow-xl p-6 mb-8">
-          <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center">
+        <section className="glass-dark rounded-2xl shadow-xl p-6 mb-8 border border-lime-400/20">
+          <h3 className="text-xl font-bold text-lime-400 mb-4 flex items-center">
             <span className="mr-2">📈</span> Regime-Switching GDP Growth Model
           </h3>
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-400 mb-6">
             This model simulates Bulgaria's GDP growth using a Markov regime-switching approach with 5 economic states.
             The economy transitions between regimes based on historical probabilities.
           </p>
@@ -727,9 +727,9 @@ const InvestmentAnalysisDashboard: React.FC = () => {
 
           {/* Statistics */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            <div className="bg-gray-50 rounded-lg p-4 text-center">
-              <div className="text-sm text-gray-500">Mean Final</div>
-              <div className="text-2xl font-bold text-gray-800">
+            <div className="glass-dark rounded-lg p-4 text-center border border-lime-400/10">
+              <div className="text-sm text-gray-400">Mean Final</div>
+              <div className="text-2xl font-bold text-lime-400">
                 {regimeSimulation.statistics.mean.toFixed(1)}%
               </div>
             </div>
@@ -769,11 +769,11 @@ const InvestmentAnalysisDashboard: React.FC = () => {
 
       {/* Simulation 2: Multi-Factor */}
       {activeSimulation === 2 && (
-        <section className="bg-white rounded-2xl shadow-xl p-6 mb-8">
-          <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center">
+        <section className="glass-dark rounded-2xl shadow-xl p-6 mb-8 border border-lime-400/20">
+          <h3 className="text-xl font-bold text-lime-400 mb-4 flex items-center">
             <span className="mr-2">🔗</span> Multi-Factor Economic Simulation
           </h3>
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-400 mb-6">
             This model simulates GDP, Unemployment, Inflation, and FDI simultaneously, accounting for their 
             correlations. Higher GDP growth leads to lower unemployment and attracts more FDI.
           </p>
@@ -890,11 +890,11 @@ const InvestmentAnalysisDashboard: React.FC = () => {
 
       {/* Simulation 3: FDI Returns */}
       {activeSimulation === 3 && (
-        <section className="bg-white rounded-2xl shadow-xl p-6 mb-8">
-          <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center">
+        <section className="glass-dark rounded-2xl shadow-xl p-6 mb-8 border border-lime-400/20">
+          <h3 className="text-xl font-bold text-lime-400 mb-4 flex items-center">
             <span className="mr-2">💰</span> FDI Investment Return Simulation
           </h3>
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-400 mb-6">
             Simulates expected returns for foreign direct investment in Bulgaria vs EU average and US,
             accounting for tax benefits, labor cost savings, and market access premiums.
           </p>
@@ -915,7 +915,7 @@ const InvestmentAnalysisDashboard: React.FC = () => {
           {/* Comparison Table */}
           <div className="overflow-x-auto mb-6">
             <table className="w-full">
-              <thead className="bg-gray-100">
+              <thead className="glass-dark border border-lime-400/20">
                 <tr>
                   <th className="px-4 py-3 text-left font-semibold text-gray-700">Region</th>
                   <th className="px-4 py-3 text-right font-semibold text-gray-700">Expected Return</th>
@@ -970,7 +970,7 @@ const InvestmentAnalysisDashboard: React.FC = () => {
       {/* Simulation 4: Stress Testing */}
       {activeSimulation === 4 && (
         <section className="bg-white rounded-2xl shadow-xl p-6 mb-8">
-          <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center">
+          <h3 className="text-xl font-bold text-lime-400 mb-4 flex items-center">
             <span className="mr-2">⚠️</span> Stress Testing Scenarios
           </h3>
           <p className="text-gray-600 mb-6">
@@ -995,7 +995,7 @@ const InvestmentAnalysisDashboard: React.FC = () => {
                     {scenario.probability}% probability
                   </span>
                 </div>
-                <h4 className="font-bold text-lg text-gray-800 mb-2">{scenario.name}</h4>
+                <h4 className="font-bold text-lg text-lime-400 mb-2">{scenario.name}</h4>
                 <p className="text-sm text-gray-600 mb-4">{scenario.description}</p>
                 <div className="grid grid-cols-2 gap-2 text-sm">
                   <div>
@@ -1074,7 +1074,7 @@ const InvestmentAnalysisDashboard: React.FC = () => {
 
       {/* Methodology Note */}
       <section className="bg-gray-50 rounded-xl p-6 text-sm text-gray-600">
-        <h4 className="font-bold text-gray-800 mb-2">📝 Methodology Notes</h4>
+        <h4 className="font-bold text-lime-400 mb-2">📝 Methodology Notes</h4>
         <ul className="space-y-1">
           <li>• <strong>Regime-Switching Model:</strong> Uses Markov chain with transition probabilities derived from historical data (2000-2024)</li>
           <li>• <strong>Multi-Factor Simulation:</strong> Correlation coefficients estimated from World Bank historical data</li>

@@ -56,21 +56,6 @@ module.exports = {
         },
         'bulgaria-green': '#00966E',
         'bulgaria-red': '#D62612',
-        // Lando Norris inspired colors
-        'lime': {
-          400: '#D2FF00',
-          DEFAULT: '#D2FF00',
-        },
-        'dark-green': '#0A1F0A',
-        'cyan': {
-          400: '#82E6FF',
-        },
-        'pink': {
-          400: '#FF6B9D',
-        },
-        'orange': {
-          400: '#FFB800',
-        },
       },
       borderRadius: {
         lg: "var(--radius)",

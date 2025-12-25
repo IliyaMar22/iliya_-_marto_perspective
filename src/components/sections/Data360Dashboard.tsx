@@ -68,17 +68,17 @@ const Data360Dashboard: React.FC = () => {
 
   if (data.loading) {
     return (
-      <div className="flex flex-col justify-center items-center min-h-screen">
+      <div className="flex flex-col justify-center items-center min-h-screen bg-black">
         <LoadingSpinner size="lg" />
-        <p className="mt-4 text-gray-600 text-lg">Loading comprehensive World Bank Data360 indicators...</p>
+        <p className="mt-4 text-gray-400 text-lg">Loading comprehensive World Bank Data360 indicators...</p>
       </div>
     );
   }
 
   if (data.error) {
     return (
-      <div className="flex justify-center items-center min-h-screen">
-        <div className="text-red-600 text-center">
+      <div className="flex justify-center items-center min-h-screen bg-black">
+        <div className="text-orange-400 text-center">
           <p className="text-xl font-semibold mb-2">Error</p>
           <p>{data.error}</p>
         </div>
@@ -87,9 +87,9 @@ const Data360Dashboard: React.FC = () => {
   }
 
   return (
-    <div className="w-full bg-gradient-to-b from-white to-gray-50">
+    <div className="w-full bg-black">
       {/* Header - Responsive */}
-      <header className="bg-gradient-to-r from-green-700 to-green-600 text-white py-8 sm:py-12 lg:py-16">
+      <header className="bg-gradient-to-r from-lime-400 to-green-600 text-dark-green py-8 sm:py-12 lg:py-16">
         <div className="container mx-auto px-4">
           <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold mb-2 sm:mb-4">
             Bulgaria Data360: Economic & Social Indicators
@@ -134,8 +134,8 @@ const PeopleSection: React.FC<{ data: CategoryData }> = ({ data }) => {
           <span className="text-2xl">👥</span>
         </div>
         <div>
-          <h2 className="text-3xl font-bold text-gray-800">People</h2>
-          <p className="text-gray-600">Education, Health, Labor & Demographics</p>
+          <h2 className="text-3xl font-bold text-lime-400">People</h2>
+          <p className="text-gray-400">Education, Health, Labor & Demographics</p>
         </div>
       </div>
 
@@ -174,8 +174,8 @@ const PeopleSection: React.FC<{ data: CategoryData }> = ({ data }) => {
       {/* Charts */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {data.LIFE_EXPECTANCY && data.LIFE_EXPECTANCY.length > 0 && (
-          <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6">
-            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-gray-800">
+          <div className="glass-dark rounded-xl shadow-lg p-4 sm:p-6 border border-lime-400/20">
+            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-lime-400">
               Life Expectancy Trend
             </h3>
             <LineChart
@@ -187,8 +187,8 @@ const PeopleSection: React.FC<{ data: CategoryData }> = ({ data }) => {
         )}
         
         {data.LABOR_FORCE_FEMALE && data.LABOR_FORCE_FEMALE.length > 0 && (
-          <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6">
-            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-gray-800">
+          <div className="glass-dark rounded-xl shadow-lg p-4 sm:p-6 border border-lime-400/20">
+            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-lime-400">
               Female Labor Force Participation
             </h3>
             <LineChart
@@ -200,8 +200,8 @@ const PeopleSection: React.FC<{ data: CategoryData }> = ({ data }) => {
         )}
         
         {data.POPULATION_TOTAL && data.POPULATION_TOTAL.length > 0 && (
-          <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6">
-            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-gray-800">
+          <div className="glass-dark rounded-xl shadow-lg p-4 sm:p-6 border border-lime-400/20">
+            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-lime-400">
               Total Population
             </h3>
             <LineChart
@@ -213,8 +213,8 @@ const PeopleSection: React.FC<{ data: CategoryData }> = ({ data }) => {
         )}
         
         {data.PHYSICIANS_DENSITY && data.PHYSICIANS_DENSITY.length > 0 && (
-          <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6">
-            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-gray-800">
+          <div className="glass-dark rounded-xl shadow-lg p-4 sm:p-6 border border-lime-400/20">
+            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-lime-400">
               Physicians Density
             </h3>
             <LineChart
@@ -243,8 +243,8 @@ const ProsperitySection: React.FC<{ data: CategoryData }> = ({ data }) => {
           <span className="text-2xl">💰</span>
         </div>
         <div>
-          <h2 className="text-3xl font-bold text-gray-800">Prosperity</h2>
-          <p className="text-gray-600">Economic Performance, Trade & Innovation</p>
+          <h2 className="text-3xl font-bold text-lime-400">Prosperity</h2>
+          <p className="text-gray-400">Economic Performance, Trade & Innovation</p>
         </div>
       </div>
 
@@ -283,8 +283,8 @@ const ProsperitySection: React.FC<{ data: CategoryData }> = ({ data }) => {
       {/* Charts */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {data.GNI_PER_CAPITA && data.GNI_PER_CAPITA.length > 0 && (
-          <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6">
-            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-gray-800">
+          <div className="glass-dark rounded-xl shadow-lg p-4 sm:p-6 border border-lime-400/20">
+            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-lime-400">
               GNI Per Capita
             </h3>
             <LineChart
@@ -296,8 +296,8 @@ const ProsperitySection: React.FC<{ data: CategoryData }> = ({ data }) => {
         )}
         
         {data.EXPORTS_GOODS_SERVICES && data.IMPORTS_GOODS_SERVICES && (
-          <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6">
-            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-gray-800">
+          <div className="glass-dark rounded-xl shadow-lg p-4 sm:p-6 border border-lime-400/20">
+            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-lime-400">
               Trade Balance (Exports vs Imports)
             </h3>
             <LineChart
@@ -309,8 +309,8 @@ const ProsperitySection: React.FC<{ data: CategoryData }> = ({ data }) => {
         )}
         
         {data.FDI_INFLOWS_BOP && data.FDI_INFLOWS_BOP.length > 0 && (
-          <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6">
-            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-gray-800">
+          <div className="glass-dark rounded-xl shadow-lg p-4 sm:p-6 border border-lime-400/20">
+            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-lime-400">
               Foreign Direct Investment Inflows
             </h3>
             <BarChart
@@ -322,8 +322,8 @@ const ProsperitySection: React.FC<{ data: CategoryData }> = ({ data }) => {
         )}
         
         {data.HIGH_TECH_EXPORTS && data.HIGH_TECH_EXPORTS.length > 0 && (
-          <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6">
-            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-gray-800">
+          <div className="glass-dark rounded-xl shadow-lg p-4 sm:p-6 border border-lime-400/20">
+            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-lime-400">
               High-Technology Exports
             </h3>
             <LineChart
@@ -352,8 +352,8 @@ const PlanetSection: React.FC<{ data: CategoryData }> = ({ data }) => {
           <span className="text-2xl">🌍</span>
         </div>
         <div>
-          <h2 className="text-3xl font-bold text-gray-800">Planet</h2>
-          <p className="text-gray-600">Environment, Energy & Climate</p>
+          <h2 className="text-3xl font-bold text-lime-400">Planet</h2>
+          <p className="text-gray-400">Environment, Energy & Climate</p>
         </div>
       </div>
 
@@ -392,8 +392,8 @@ const PlanetSection: React.FC<{ data: CategoryData }> = ({ data }) => {
       {/* Charts */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {data.GHG_EMISSIONS && data.GHG_EMISSIONS.length > 0 && (
-          <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6">
-            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-gray-800">
+          <div className="glass-dark rounded-xl shadow-lg p-4 sm:p-6 border border-lime-400/20">
+            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-lime-400">
               Total Greenhouse Gas Emissions
             </h3>
             <LineChart
@@ -405,8 +405,8 @@ const PlanetSection: React.FC<{ data: CategoryData }> = ({ data }) => {
         )}
         
         {data.RENEWABLE_ENERGY && data.RENEWABLE_ENERGY.length > 0 && (
-          <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6">
-            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-gray-800">
+          <div className="glass-dark rounded-xl shadow-lg p-4 sm:p-6 border border-lime-400/20">
+            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-lime-400">
               Renewable Energy Consumption
             </h3>
             <LineChart
@@ -418,8 +418,8 @@ const PlanetSection: React.FC<{ data: CategoryData }> = ({ data }) => {
         )}
         
         {data.FOREST_AREA && data.FOREST_AREA.length > 0 && (
-          <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6">
-            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-gray-800">
+          <div className="glass-dark rounded-xl shadow-lg p-4 sm:p-6 border border-lime-400/20">
+            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-lime-400">
               Forest Area Coverage
             </h3>
             <LineChart
@@ -431,8 +431,8 @@ const PlanetSection: React.FC<{ data: CategoryData }> = ({ data }) => {
         )}
         
         {data.PM25_AIR_POLLUTION && data.PM25_AIR_POLLUTION.length > 0 && (
-          <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6">
-            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-gray-800">
+          <div className="glass-dark rounded-xl shadow-lg p-4 sm:p-6 border border-lime-400/20">
+            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-lime-400">
               PM2.5 Air Pollution
             </h3>
             <LineChart
@@ -461,8 +461,8 @@ const InfrastructureSection: React.FC<{ data: CategoryData }> = ({ data }) => {
           <span className="text-2xl">🏗️</span>
         </div>
         <div>
-          <h2 className="text-3xl font-bold text-gray-800">Infrastructure</h2>
-          <p className="text-gray-600">Transport, Energy, Water & Urban Development</p>
+          <h2 className="text-3xl font-bold text-lime-400">Infrastructure</h2>
+          <p className="text-gray-400">Transport, Energy, Water & Urban Development</p>
         </div>
       </div>
 
@@ -501,8 +501,8 @@ const InfrastructureSection: React.FC<{ data: CategoryData }> = ({ data }) => {
       {/* Charts */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {data.ELECTRIC_POWER_CONSUMPTION && data.ELECTRIC_POWER_CONSUMPTION.length > 0 && (
-          <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6">
-            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-gray-800">
+          <div className="glass-dark rounded-xl shadow-lg p-4 sm:p-6 border border-lime-400/20">
+            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-lime-400">
               Electric Power Consumption
             </h3>
             <LineChart
@@ -514,8 +514,8 @@ const InfrastructureSection: React.FC<{ data: CategoryData }> = ({ data }) => {
         )}
         
         {data.AIR_TRANSPORT_PASSENGERS && data.AIR_TRANSPORT_PASSENGERS.length > 0 && (
-          <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6">
-            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-gray-800">
+          <div className="glass-dark rounded-xl shadow-lg p-4 sm:p-6 border border-lime-400/20">
+            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-lime-400">
               Air Transport Passengers
             </h3>
             <LineChart
@@ -527,8 +527,8 @@ const InfrastructureSection: React.FC<{ data: CategoryData }> = ({ data }) => {
         )}
         
         {data.URBAN_POPULATION_GROWTH && data.URBAN_POPULATION_GROWTH.length > 0 && (
-          <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6">
-            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-gray-800">
+          <div className="glass-dark rounded-xl shadow-lg p-4 sm:p-6 border border-lime-400/20">
+            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-lime-400">
               Urban Population Growth
             </h3>
             <BarChart
@@ -540,8 +540,8 @@ const InfrastructureSection: React.FC<{ data: CategoryData }> = ({ data }) => {
         )}
         
         {data.ACCESS_SANITATION && data.ACCESS_SANITATION.length > 0 && (
-          <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6">
-            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-gray-800">
+          <div className="glass-dark rounded-xl shadow-lg p-4 sm:p-6 border border-lime-400/20">
+            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-lime-400">
               Access to Sanitation
             </h3>
             <LineChart
@@ -570,8 +570,8 @@ const DigitalSection: React.FC<{ data: CategoryData }> = ({ data }) => {
           <span className="text-2xl">💻</span>
         </div>
         <div>
-          <h2 className="text-3xl font-bold text-gray-800">Digital</h2>
-          <p className="text-gray-600">Internet, ICT & Digital Innovation</p>
+          <h2 className="text-3xl font-bold text-lime-400">Digital</h2>
+          <p className="text-gray-400">Internet, ICT & Digital Innovation</p>
         </div>
       </div>
 
@@ -610,8 +610,8 @@ const DigitalSection: React.FC<{ data: CategoryData }> = ({ data }) => {
       {/* Charts */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {data.INTERNET_USERS && data.INTERNET_USERS.length > 0 && (
-          <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6">
-            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-gray-800">
+          <div className="glass-dark rounded-xl shadow-lg p-4 sm:p-6 border border-lime-400/20">
+            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-lime-400">
               Internet Users Growth
             </h3>
             <LineChart
@@ -623,8 +623,8 @@ const DigitalSection: React.FC<{ data: CategoryData }> = ({ data }) => {
         )}
         
         {data.MOBILE_SUBSCRIPTIONS && data.MOBILE_SUBSCRIPTIONS.length > 0 && (
-          <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6">
-            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-gray-800">
+          <div className="glass-dark rounded-xl shadow-lg p-4 sm:p-6 border border-lime-400/20">
+            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-lime-400">
               Mobile Cellular Subscriptions
             </h3>
             <LineChart
@@ -636,8 +636,8 @@ const DigitalSection: React.FC<{ data: CategoryData }> = ({ data }) => {
         )}
         
         {data.FIXED_BROADBAND && data.FIXED_BROADBAND.length > 0 && (
-          <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6">
-            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-gray-800">
+          <div className="glass-dark rounded-xl shadow-lg p-4 sm:p-6 border border-lime-400/20">
+            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-lime-400">
               Fixed Broadband Penetration
             </h3>
             <LineChart
@@ -649,8 +649,8 @@ const DigitalSection: React.FC<{ data: CategoryData }> = ({ data }) => {
         )}
         
         {data.SCIENTIFIC_ARTICLES && data.SCIENTIFIC_ARTICLES.length > 0 && (
-          <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6">
-            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-gray-800">
+          <div className="glass-dark rounded-xl shadow-lg p-4 sm:p-6 border border-lime-400/20">
+            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-2 sm:mb-4 text-lime-400">
               Scientific & Technical Publications
             </h3>
             <BarChart

@@ -168,8 +168,8 @@ const SlideHeader: React.FC<{ slideNumber: number; title: string; subtitle?: str
         {slideNumber}
       </div>
       <div>
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-900">{title}</h2>
-        {subtitle && <p className="text-gray-600">{subtitle}</p>}
+        <h2 className="text-2xl md:text-3xl font-bold text-lime-400">{title}</h2>
+        {subtitle && <p className="text-gray-400">{subtitle}</p>}
       </div>
     </div>
   </motion.div>
@@ -183,9 +183,9 @@ const ChartContainer: React.FC<{ children: React.ReactNode; title?: string; clas
     whileInView={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.5 }}
     viewport={{ once: true }}
-    className={`rounded-2xl bg-white/80 backdrop-blur-lg p-6 shadow-xl border border-gray-200/50 ${className}`}
+    className={`rounded-2xl glass-dark p-6 shadow-xl border border-lime-400/20 ${className}`}
   >
-    {title && <h3 className="mb-4 text-lg font-semibold text-gray-800">{title}</h3>}
+    {title && <h3 className="mb-4 text-lg font-semibold text-lime-400">{title}</h3>}
     {children}
   </motion.div>
 );
@@ -207,7 +207,7 @@ const ProgressBar: React.FC<{ value: number; max: number; label: string; color: 
           <span className="text-sm font-bold text-gray-900">{value}%</span>
         </div>
       )}
-      <div className="h-3 w-full rounded-full bg-gray-200 overflow-hidden">
+      <div className="h-3 w-full rounded-full bg-gray-700 overflow-hidden">
         <motion.div
           initial={{ width: 0 }}
           whileInView={{ width: `${percentage}%` }}
@@ -290,7 +290,7 @@ const EconomicConvergenceDashboard: React.FC = () => {
             className="text-center"
           >
             <div className="mb-6 flex justify-center">
-              <div className="flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 backdrop-blur-sm">
+              <div className="flex items-center gap-2 rounded-full glass-dark px-4 py-2 border border-lime-400/20">
                 <span className="text-2xl">🇧🇬</span>
                 <span className="font-medium">Bulgaria Investment Analysis</span>
               </div>
@@ -325,12 +325,12 @@ const EconomicConvergenceDashboard: React.FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.6 + idx * 0.1 }}
-                className="rounded-2xl bg-white/5 p-4 md:p-6 backdrop-blur-sm border border-white/10 text-center"
+                className="rounded-2xl glass-dark p-4 md:p-6 border border-lime-400/20 text-center"
               >
                 <span className="text-3xl">{stat.icon}</span>
-                <p className="mt-2 text-2xl md:text-3xl font-bold">{stat.value}</p>
+                <p className="mt-2 text-2xl md:text-3xl font-bold text-lime-400">{stat.value}</p>
                 <p className="text-sm text-gray-400">{stat.label}</p>
-                <p className="text-xs text-emerald-400 mt-1">{stat.sublabel}</p>
+                <p className="text-xs text-lime-400 mt-1">{stat.sublabel}</p>
               </motion.div>
             ))}
           </motion.div>
@@ -338,7 +338,7 @@ const EconomicConvergenceDashboard: React.FC = () => {
       </motion.section>
 
       {/* Navigation Pills */}
-      <div className="sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-gray-200 shadow-sm">
+      <div className="sticky top-0 z-50 glass-dark border-b border-lime-400/20 shadow-sm">
         <div className="container mx-auto px-4">
           <div className="flex overflow-x-auto py-3 gap-2 no-scrollbar">
             {slides.map((slide, idx) => (
@@ -350,8 +350,8 @@ const EconomicConvergenceDashboard: React.FC = () => {
                 }}
                 className={`whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium transition-all ${
                   activeSlide === idx
-                    ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-lg'
-                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                    ? 'bg-lime-400 text-dark-green shadow-lg'
+                    : 'glass-dark text-gray-300 hover:bg-lime-400/20 border border-lime-400/10'
                 }`}
               >
                 {idx + 1}. {slide}
@@ -379,28 +379,28 @@ const EconomicConvergenceDashboard: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="rounded-3xl bg-gradient-to-br from-slate-900 to-blue-900 p-8 text-white shadow-2xl"
+            className="rounded-3xl glass-dark p-8 text-white shadow-2xl border border-lime-400/20"
           >
             <div className="flex items-start gap-4 mb-6">
-              <div className="rounded-xl bg-white/10 p-3"><span className="text-4xl">📋</span></div>
+              <div className="rounded-xl glass-dark p-3 border border-lime-400/20"><span className="text-4xl">📋</span></div>
               <div>
-                <h3 className="text-2xl font-bold">Investment Thesis</h3>
-                <p className="text-gray-300">Key findings and strategic recommendations</p>
+                <h3 className="text-2xl font-bold text-lime-400">Investment Thesis</h3>
+                <p className="text-gray-400">Key findings and strategic recommendations</p>
               </div>
             </div>
             
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-4">
-                <div className="rounded-xl bg-white/5 p-4 border border-white/10">
-                  <h4 className="font-semibold text-emerald-400 mb-2">✅ Growth Drivers</h4>
+                <div className="rounded-xl glass-dark p-4 border border-lime-400/10">
+                  <h4 className="font-semibold text-lime-400 mb-2">✅ Growth Drivers</h4>
                   <ul className="text-sm text-gray-300 space-y-1">
                     <li>• Real GDP growth averaging 3.0% annually (2005-2024)</li>
                     <li>• Domestic demand and EU funds absorption</li>
                     <li>• Employment growth driving consumption</li>
                   </ul>
                 </div>
-                <div className="rounded-xl bg-white/5 p-4 border border-white/10">
-                  <h4 className="font-semibold text-blue-400 mb-2">🎯 Investment Themes</h4>
+                <div className="rounded-xl glass-dark p-4 border border-cyan-400/10">
+                  <h4 className="font-semibold text-cyan-400 mb-2">🎯 Investment Themes</h4>
                   <ul className="text-sm text-gray-300 space-y-1">
                     <li>• Infrastructure modernization</li>
                     <li>• Renewable energy transition</li>
@@ -409,8 +409,8 @@ const EconomicConvergenceDashboard: React.FC = () => {
                 </div>
               </div>
               <div className="space-y-4">
-                <div className="rounded-xl bg-white/5 p-4 border border-white/10">
-                  <h4 className="font-semibold text-amber-400 mb-2">⚠️ Key Challenges</h4>
+                <div className="rounded-xl glass-dark p-4 border border-orange-400/10">
+                  <h4 className="font-semibold text-orange-400 mb-2">⚠️ Key Challenges</h4>
                   <ul className="text-sm text-gray-300 space-y-1">
                     <li>• Widening productivity gap (47% below EU)</li>
                     <li>• High income inequality (Gini: 37.2)</li>
@@ -613,7 +613,7 @@ const EconomicConvergenceDashboard: React.FC = () => {
                     <span className="text-3xl">{item.flag}</span>
                     <div className="flex-1">
                       <div className="flex justify-between mb-1"><span className="font-semibold text-gray-800">{item.country}</span><span className="font-bold text-gray-900">€{item.amount}m</span></div>
-                      <div className="h-3 w-full rounded-full bg-gray-200 overflow-hidden">
+                      <div className="h-3 w-full rounded-full bg-gray-700 overflow-hidden">
                         <motion.div initial={{ width: 0 }} whileInView={{ width: `${(item.amount / 600) * 100}%` }} transition={{ duration: 0.8, delay: idx * 0.1 }} viewport={{ once: true }} className="h-full rounded-full bg-gradient-to-r from-blue-500 to-indigo-500" />
                       </div>
                     </div>

@@ -137,14 +137,14 @@ const LabourDataDashboard: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 bg-black">
       {/* Header */}
       <div className="text-center mb-12">
         <div className="flex items-center justify-center mb-4">
           <span className="text-5xl mr-3">👷</span>
-          <h1 className="text-4xl font-extrabold text-gray-800">Labour Market Data</h1>
+          <h1 className="text-4xl font-extrabold text-lime-400">Labour Market Data</h1>
         </div>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        <p className="text-subtitle max-w-3xl mx-auto">
           Main Labour Force Survey Results - Third Quarter 2025
         </p>
         <p className="text-sm text-gray-500 mt-2">
@@ -154,54 +154,54 @@ const LabourDataDashboard: React.FC = () => {
 
       {/* Key Indicators Flash Cards */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+        <h2 className="text-2xl font-bold text-lime-400 mb-6 flex items-center">
           <span className="mr-3">📊</span> Key Labour Market Indicators (Q3 2025)
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-          <div className="bg-gradient-to-br from-green-50 to-emerald-100 rounded-xl p-4 shadow-lg">
+          <div className="glass-dark rounded-xl p-4 shadow-lg border border-lime-400/20">
             <div className="text-3xl mb-2">📉</div>
-            <div className="text-3xl font-bold text-green-700">{KEY_INDICATORS.unemploymentRate.value}%</div>
-            <div className="text-sm font-medium text-gray-600">Unemployment Rate</div>
+            <div className="text-3xl font-bold text-lime-400">{KEY_INDICATORS.unemploymentRate.value}%</div>
+            <div className="text-sm font-medium text-gray-400">Unemployment Rate</div>
             <div className="text-xs text-green-600 font-semibold mt-1">
               {KEY_INDICATORS.unemploymentRate.change} pp vs Q3 2024
             </div>
           </div>
-          <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-xl p-4 shadow-lg">
+          <div className="glass-dark rounded-xl p-4 shadow-lg border border-cyan-400/20">
             <div className="text-3xl mb-2">💼</div>
-            <div className="text-3xl font-bold text-blue-700">{KEY_INDICATORS.employmentRate15_64.value}%</div>
-            <div className="text-sm font-medium text-gray-600">Employment Rate (15-64)</div>
+            <div className="text-3xl font-bold text-cyan-400">{KEY_INDICATORS.employmentRate15_64.value}%</div>
+            <div className="text-sm font-medium text-gray-400">Employment Rate (15-64)</div>
             <div className="text-xs text-red-500 font-semibold mt-1">
               {KEY_INDICATORS.employmentRate15_64.change} pp vs Q3 2024
             </div>
           </div>
-          <div className="bg-gradient-to-br from-purple-50 to-violet-100 rounded-xl p-4 shadow-lg">
+          <div className="glass-dark rounded-xl p-4 shadow-lg border border-purple-400/20">
             <div className="text-3xl mb-2">📈</div>
-            <div className="text-3xl font-bold text-purple-700">{KEY_INDICATORS.activityRate15_64.value}%</div>
-            <div className="text-sm font-medium text-gray-600">Activity Rate (15-64)</div>
+            <div className="text-3xl font-bold text-purple-400">{KEY_INDICATORS.activityRate15_64.value}%</div>
+            <div className="text-sm font-medium text-gray-400">Activity Rate (15-64)</div>
             <div className="text-xs text-red-500 font-semibold mt-1">
               {KEY_INDICATORS.activityRate15_64.change} pp vs Q3 2024
             </div>
           </div>
-          <div className="bg-gradient-to-br from-cyan-50 to-teal-100 rounded-xl p-4 shadow-lg">
+          <div className="glass-dark rounded-xl p-4 shadow-lg border border-teal-400/20">
             <div className="text-3xl mb-2">👥</div>
-            <div className="text-3xl font-bold text-teal-700">{KEY_INDICATORS.totalEmployed.value}K</div>
-            <div className="text-sm font-medium text-gray-600">Total Employed</div>
+            <div className="text-3xl font-bold text-teal-400">{KEY_INDICATORS.totalEmployed.value}K</div>
+            <div className="text-sm font-medium text-gray-400">Total Employed</div>
             <div className="text-xs text-red-500 font-semibold mt-1">
               {KEY_INDICATORS.totalEmployed.change}K vs Q3 2024
             </div>
           </div>
-          <div className="bg-gradient-to-br from-orange-50 to-amber-100 rounded-xl p-4 shadow-lg">
+          <div className="glass-dark rounded-xl p-4 shadow-lg border border-orange-400/20">
             <div className="text-3xl mb-2">🔍</div>
-            <div className="text-3xl font-bold text-orange-700">{KEY_INDICATORS.totalUnemployed.value}K</div>
-            <div className="text-sm font-medium text-gray-600">Total Unemployed</div>
+            <div className="text-3xl font-bold text-orange-400">{KEY_INDICATORS.totalUnemployed.value}K</div>
+            <div className="text-sm font-medium text-gray-400">Total Unemployed</div>
             <div className="text-xs text-green-600 font-semibold mt-1">
               {KEY_INDICATORS.totalUnemployed.change}K vs Q3 2024
             </div>
           </div>
-          <div className="bg-gradient-to-br from-rose-50 to-pink-100 rounded-xl p-4 shadow-lg">
+          <div className="glass-dark rounded-xl p-4 shadow-lg border border-pink-400/20">
             <div className="text-3xl mb-2">⏱️</div>
-            <div className="text-3xl font-bold text-rose-700">{KEY_INDICATORS.longTermUnemployment.value}%</div>
-            <div className="text-sm font-medium text-gray-600">Long-term Unemp.</div>
+            <div className="text-3xl font-bold text-pink-400">{KEY_INDICATORS.longTermUnemployment.value}%</div>
+            <div className="text-sm font-medium text-gray-400">Long-term Unemp.</div>
             <div className="text-xs text-green-600 font-semibold mt-1">
               {KEY_INDICATORS.longTermUnemployment.change} pp vs Q3 2024
             </div>
@@ -222,8 +222,8 @@ const LabourDataDashboard: React.FC = () => {
             onClick={() => setActiveTab(tab.id as any)}
             className={`px-6 py-3 rounded-xl font-semibold transition-all ${
               activeTab === tab.id
-                ? 'bg-green-600 text-white shadow-lg'
-                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                ? 'bg-lime-400 text-dark-green shadow-lg'
+                : 'glass-dark text-gray-300 hover:bg-lime-400/20 border border-lime-400/10'
             }`}
           >
             <span className="mr-2">{tab.icon}</span>
@@ -236,7 +236,7 @@ const LabourDataDashboard: React.FC = () => {
       {activeTab === 'overview' && (
         <div className="space-y-8">
           {/* Summary Text */}
-          <section className="bg-gradient-to-r from-green-600 to-emerald-700 rounded-2xl p-8 text-white shadow-xl">
+          <section className="bg-gradient-to-r from-lime-400 to-green-600 rounded-2xl p-8 text-dark-green shadow-xl">
             <h2 className="text-2xl font-bold mb-4 flex items-center">
               <span className="mr-3">📝</span> Labour Market Summary - Q3 2025
             </h2>
@@ -287,8 +287,8 @@ const LabourDataDashboard: React.FC = () => {
           </section>
 
           {/* Labour Market Comparison Chart */}
-          <section className="bg-white rounded-2xl shadow-xl p-6">
-            <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center">
+          <section className="glass-dark rounded-2xl shadow-xl p-6 border border-lime-400/20">
+            <h3 className="text-xl font-bold text-lime-400 mb-4 flex items-center">
               <span className="mr-2">📊</span> Labour Market Indicators: Q3 2024 vs Q3 2025
             </h3>
             <div className="h-80">
@@ -307,8 +307,8 @@ const LabourDataDashboard: React.FC = () => {
           </section>
 
           {/* Total Employees Trend */}
-          <section className="bg-white rounded-2xl shadow-xl p-6">
-            <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center">
+          <section className="glass-dark rounded-2xl shadow-xl p-6 border border-lime-400/20">
+            <h3 className="text-xl font-bold text-lime-400 mb-4 flex items-center">
               <span className="mr-2">👥</span> Total Employees Trend (July - September 2025)
             </h3>
             <div className="h-64">
@@ -400,8 +400,8 @@ const LabourDataDashboard: React.FC = () => {
           </div>
 
           {/* Employment Rate by Age Group */}
-          <section className="bg-white rounded-2xl shadow-xl p-6">
-            <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center">
+          <section className="glass-dark rounded-2xl shadow-xl p-6 border border-lime-400/20">
+            <h3 className="text-xl font-bold text-lime-400 mb-4 flex items-center">
               <span className="mr-2">📈</span> Employment Rate by Age Group: Q3 2024 vs Q3 2025
             </h3>
             <div className="h-72">
@@ -487,8 +487,8 @@ const LabourDataDashboard: React.FC = () => {
           </section>
 
           {/* Wage Trends */}
-          <section className="bg-white rounded-2xl shadow-xl p-6">
-            <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center">
+          <section className="glass-dark rounded-2xl shadow-xl p-6 border border-lime-400/20">
+            <h3 className="text-xl font-bold text-lime-400 mb-4 flex items-center">
               <span className="mr-2">📈</span> Average Monthly Wages Trend (July - September 2025)
             </h3>
             <div className="h-80">
@@ -509,8 +509,8 @@ const LabourDataDashboard: React.FC = () => {
           </section>
 
           {/* Wages by Sector Ranking */}
-          <section className="bg-white rounded-2xl shadow-xl p-6">
-            <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center">
+          <section className="glass-dark rounded-2xl shadow-xl p-6 border border-lime-400/20">
+            <h3 className="text-xl font-bold text-lime-400 mb-4 flex items-center">
               <span className="mr-2">💰</span> Average Monthly Wages by Sector (September 2025)
             </h3>
             <div className="space-y-3">
@@ -550,8 +550,8 @@ const LabourDataDashboard: React.FC = () => {
       {activeTab === 'sectors' && (
         <div className="space-y-8">
           {/* Top 10 Sectors by Employment */}
-          <section className="bg-white rounded-2xl shadow-xl p-6">
-            <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center">
+          <section className="glass-dark rounded-2xl shadow-xl p-6 border border-lime-400/20">
+            <h3 className="text-xl font-bold text-lime-400 mb-4 flex items-center">
               <span className="mr-2">🏭</span> Top 10 Sectors by Number of Employees (September 2025)
             </h3>
             <div className="h-96">
@@ -572,8 +572,8 @@ const LabourDataDashboard: React.FC = () => {
           </section>
 
           {/* Employees vs Wages Comparison */}
-          <section className="bg-white rounded-2xl shadow-xl p-6">
-            <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center">
+          <section className="glass-dark rounded-2xl shadow-xl p-6 border border-lime-400/20">
+            <h3 className="text-xl font-bold text-lime-400 mb-4 flex items-center">
               <span className="mr-2">⚖️</span> Employees vs Average Wages by Sector
             </h3>
             <div className="h-80">
@@ -600,8 +600,8 @@ const LabourDataDashboard: React.FC = () => {
           </section>
 
           {/* Sector Details Table */}
-          <section className="bg-white rounded-2xl shadow-xl p-6">
-            <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center">
+          <section className="glass-dark rounded-2xl shadow-xl p-6 border border-lime-400/20">
+            <h3 className="text-xl font-bold text-lime-400 mb-4 flex items-center">
               <span className="mr-2">📋</span> Detailed Sector Statistics
             </h3>
             <div className="overflow-x-auto">

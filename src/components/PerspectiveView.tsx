@@ -1,4 +1,5 @@
 import { Suspense, useState, useEffect } from 'react';
+import { Globe } from 'lucide-react';
 import { useSmoothScroll } from '../hooks/useSmoothScroll';
 import { useScrollSection } from '../hooks/useScrollSection';
 import { useMapData } from '../hooks/useMapData';
@@ -127,14 +128,14 @@ export default function PerspectiveView() {
         <Suspense fallback={<div className="text-lime-400">Loading 3D Scene...</div>}>
           <MainScene />
         </Suspense>
-        <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-          <h1 className="text-impact mb-6 animate-float">
+        <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-6 animate-float bg-gradient-to-r from-lime-400 via-lime-300 to-cyan-400 bg-clip-text text-transparent leading-tight">
             Perspective for Bulgaria
           </h1>
-          <p className="text-subtitle mb-8">
+          <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-8 text-lime-400">
             Iliya & Martin
           </p>
-          <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
             An interactive journey through Bulgaria's economic landscape, from European context to regional insights
           </p>
           <div className="flex gap-4 justify-center">
@@ -298,9 +299,12 @@ export default function PerspectiveView() {
       {/* Footer */}
       <footer className="relative bg-black border-t border-lime-400/20 py-12">
         <div className="container mx-auto px-6 text-center">
-          <h3 className="text-2xl font-bold text-lime-400 mb-4">
-            Perspective for Bulgaria
-          </h3>
+          <div className="flex flex-col items-center justify-center mb-4">
+            <h3 className="text-2xl font-bold text-lime-400 mb-4">
+              Perspective for Bulgaria
+            </h3>
+            <Globe className="w-12 h-12 text-lime-400 mb-4" />
+          </div>
           <p className="text-gray-400 mb-6">
             Created by Iliya & Martin
           </p>
