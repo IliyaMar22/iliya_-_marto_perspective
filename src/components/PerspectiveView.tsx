@@ -83,12 +83,51 @@ interface PopulationData {
   }>;
 }
 
+interface NaturalMovementData {
+  nuts_code: string;
+  name: string;
+  name_en: string;
+  natural_movement: {
+    live_births: {
+      total: number;
+      male: number;
+      female: number;
+      rate_per_1000: number;
+    };
+    deaths: {
+      total: number;
+      male: number;
+      female: number;
+      rate_per_1000: number;
+    };
+    natural_increase: {
+      total: number;
+      rate_per_1000: number;
+    };
+    marriages: {
+      total: number;
+      rate_per_1000: number;
+    };
+    divorces: {
+      total: number;
+      rate_per_1000: number;
+    };
+    infant_mortality: {
+      total: number;
+      male: number;
+      female: number;
+      rate_per_1000_births: number;
+    };
+  };
+}
+
 export default function PerspectiveView() {
   useSmoothScroll();
   const currentSection = useScrollSection();
   const [selectedRegion, setSelectedRegion] = useState<RegionData | null>(null);
   const [rdData, setRdData] = useState<RDExpenditureData | null>(null);
   const [populationData, setPopulationData] = useState<PopulationData[]>([]);
+  const [naturalMovementData, setNaturalMovementData] = useState<NaturalMovementData[]>([]);
   
   const { geoData, regionData, loading } = useMapData('bulgaria');
 
@@ -108,6 +147,14 @@ export default function PerspectiveView() {
       .catch((error) => console.error('Error loading population data:', error));
   }, []);
 
+  // Load natural movement data
+  useEffect(() => {
+    fetch('/data/natural-movement-2023.json')
+      .then((res) => res.json())
+      .then((data) => setNaturalMovementData(data.regions || []))
+      .catch((error) => console.error('Error loading natural movement data:', error));
+  }, []);
+
   const handleRegionClick = (region: RegionData) => {
     setSelectedRegion(region);
   };
@@ -124,6 +171,12 @@ export default function PerspectiveView() {
   const getRegionPopulation = (nutsCode: string): PopulationData | null => {
     if (!populationData.length) return null;
     return populationData.find(p => p.nuts_code.toUpperCase() === nutsCode.toUpperCase()) || null;
+  };
+
+  // Get natural movement data for a specific region
+  const getRegionNaturalMovement = (nutsCode: string): NaturalMovementData | null => {
+    if (!naturalMovementData.length) return null;
+    return naturalMovementData.find(n => n.nuts_code.toUpperCase() === nutsCode.toUpperCase()) || null;
   };
 
   // Format currency for display
@@ -239,6 +292,7 @@ export default function PerspectiveView() {
               {regionData.map((region) => {
                 const rdRegionData = getRegionRD(region.id);
                 const populationRegionData = getRegionPopulation(region.nuts_code);
+                const naturalMovementRegionData = getRegionNaturalMovement(region.nuts_code);
                 const latestPopTrend = populationRegionData?.population_trend[populationRegionData.population_trend.length - 1];
                 const previousPopTrend = populationRegionData?.population_trend[populationRegionData.population_trend.length - 2];
                 
@@ -330,6 +384,58 @@ export default function PerspectiveView() {
                                 />
                               );
                             })}
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                    
+                    {/* Natural Movement Section */}
+                    {naturalMovementRegionData && (
+                      <div className="mt-4 pt-4 border-t border-purple-400/30">
+                        <div className="flex items-center justify-between mb-3">
+                          <span className="text-sm font-bold text-purple-400">👶 Demographics 2023</span>
+                        </div>
+                        <div className="space-y-2">
+                          <div className="grid grid-cols-2 gap-2 text-xs">
+                            <div className="flex flex-col">
+                              <span className="text-gray-500">Births:</span>
+                              <span className="font-mono text-lime-400 font-semibold">
+                                {naturalMovementRegionData.natural_movement.live_births.total.toLocaleString()}
+                                <span className="text-gray-500 ml-1">({naturalMovementRegionData.natural_movement.live_births.rate_per_1000}‰)</span>
+                              </span>
+                            </div>
+                            <div className="flex flex-col">
+                              <span className="text-gray-500">Deaths:</span>
+                              <span className="font-mono text-pink-400 font-semibold">
+                                {naturalMovementRegionData.natural_movement.deaths.total.toLocaleString()}
+                                <span className="text-gray-500 ml-1">({naturalMovementRegionData.natural_movement.deaths.rate_per_1000}‰)</span>
+                              </span>
+                            </div>
+                            <div className="flex flex-col">
+                              <span className="text-gray-500">Natural Increase:</span>
+                              <span className={`font-mono font-semibold ${
+                                naturalMovementRegionData.natural_movement.natural_increase.total >= 0 
+                                  ? 'text-lime-400' 
+                                  : 'text-pink-400'
+                              }`}>
+                                {naturalMovementRegionData.natural_movement.natural_increase.total >= 0 ? '+' : ''}
+                                {naturalMovementRegionData.natural_movement.natural_increase.total.toLocaleString()}
+                                <span className="text-gray-500 ml-1">({naturalMovementRegionData.natural_movement.natural_increase.rate_per_1000}‰)</span>
+                              </span>
+                            </div>
+                            <div className="flex flex-col">
+                              <span className="text-gray-500">Marriages:</span>
+                              <span className="font-mono text-cyan-400">
+                                {naturalMovementRegionData.natural_movement.marriages.total.toLocaleString()}
+                                <span className="text-gray-500 ml-1">({naturalMovementRegionData.natural_movement.marriages.rate_per_1000}‰)</span>
+                              </span>
+                            </div>
+                          </div>
+                          <div className="flex justify-between items-center text-xs pt-2">
+                            <span className="text-gray-500">Infant Mortality:</span>
+                            <span className="font-mono text-orange-400">
+                              {naturalMovementRegionData.natural_movement.infant_mortality.rate_per_1000_births}‰
+                            </span>
                           </div>
                         </div>
                       </div>

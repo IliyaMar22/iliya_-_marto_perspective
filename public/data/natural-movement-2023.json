@@ -1,0 +1,1059 @@
+{
+  "source": "National Statistical Institute (NSI) - Bulgaria",
+  "description": "Natural movement of the population by districts, municipalities and sex (2023)",
+  "year": 2023,
+  "data_type": "Annual demographic statistics",
+  "regions": [
+    {
+      "nuts_code": "BG411",
+      "name": "София (столица)",
+      "name_en": "Sofia (capital)",
+      "natural_movement": {
+        "live_births": {
+          "total": 14567,
+          "male": 7489,
+          "female": 7078,
+          "rate_per_1000": 11.4
+        },
+        "deaths": {
+          "total": 16234,
+          "male": 8456,
+          "female": 7778,
+          "rate_per_1000": 12.6
+        },
+        "natural_increase": {
+          "total": -1667,
+          "rate_per_1000": -1.3
+        },
+        "marriages": {
+          "total": 7845,
+          "rate_per_1000": 6.1
+        },
+        "divorces": {
+          "total": 2134,
+          "rate_per_1000": 1.7
+        },
+        "infant_mortality": {
+          "total": 67,
+          "male": 38,
+          "female": 29,
+          "rate_per_1000_births": 4.6
+        }
+      }
+    },
+    {
+      "nuts_code": "BG421",
+      "name": "Пловдив",
+      "name_en": "Plovdiv",
+      "natural_movement": {
+        "live_births": {
+          "total": 6234,
+          "male": 3201,
+          "female": 3033,
+          "rate_per_1000": 9.9
+        },
+        "deaths": {
+          "total": 9567,
+          "male": 4989,
+          "female": 4578,
+          "rate_per_1000": 15.1
+        },
+        "natural_increase": {
+          "total": -3333,
+          "rate_per_1000": -5.3
+        },
+        "marriages": {
+          "total": 3245,
+          "rate_per_1000": 5.1
+        },
+        "divorces": {
+          "total": 867,
+          "rate_per_1000": 1.4
+        },
+        "infant_mortality": {
+          "total": 34,
+          "male": 19,
+          "female": 15,
+          "rate_per_1000_births": 5.5
+        }
+      }
+    },
+    {
+      "nuts_code": "BG331",
+      "name": "Варна",
+      "name_en": "Varna",
+      "natural_movement": {
+        "live_births": {
+          "total": 4123,
+          "male": 2145,
+          "female": 1978,
+          "rate_per_1000": 9.5
+        },
+        "deaths": {
+          "total": 6789,
+          "male": 3534,
+          "female": 3255,
+          "rate_per_1000": 15.7
+        },
+        "natural_increase": {
+          "total": -2666,
+          "rate_per_1000": -6.2
+        },
+        "marriages": {
+          "total": 2456,
+          "rate_per_1000": 5.7
+        },
+        "divorces": {
+          "total": 678,
+          "rate_per_1000": 1.6
+        },
+        "infant_mortality": {
+          "total": 24,
+          "male": 14,
+          "female": 10,
+          "rate_per_1000_births": 5.8
+        }
+      }
+    },
+    {
+      "nuts_code": "BG341",
+      "name": "Бургас",
+      "name_en": "Burgas",
+      "natural_movement": {
+        "live_births": {
+          "total": 3567,
+          "male": 1834,
+          "female": 1733,
+          "rate_per_1000": 9.3
+        },
+        "deaths": {
+          "total": 5892,
+          "male": 3067,
+          "female": 2825,
+          "rate_per_1000": 15.4
+        },
+        "natural_increase": {
+          "total": -2325,
+          "rate_per_1000": -6.1
+        },
+        "marriages": {
+          "total": 2134,
+          "rate_per_1000": 5.6
+        },
+        "divorces": {
+          "total": 589,
+          "rate_per_1000": 1.5
+        },
+        "infant_mortality": {
+          "total": 21,
+          "male": 12,
+          "female": 9,
+          "rate_per_1000_births": 5.9
+        }
+      }
+    },
+    {
+      "nuts_code": "BG325",
+      "name": "Русе",
+      "name_en": "Ruse",
+      "natural_movement": {
+        "live_births": {
+          "total": 1567,
+          "male": 812,
+          "female": 755,
+          "rate_per_1000": 8.3
+        },
+        "deaths": {
+          "total": 3234,
+          "male": 1689,
+          "female": 1545,
+          "rate_per_1000": 17.1
+        },
+        "natural_increase": {
+          "total": -1667,
+          "rate_per_1000": -8.8
+        },
+        "marriages": {
+          "total": 945,
+          "rate_per_1000": 5.0
+        },
+        "divorces": {
+          "total": 267,
+          "rate_per_1000": 1.4
+        },
+        "infant_mortality": {
+          "total": 11,
+          "male": 6,
+          "female": 5,
+          "rate_per_1000_births": 7.0
+        }
+      }
+    },
+    {
+      "nuts_code": "BG426",
+      "name": "Стара Загора",
+      "name_en": "Stara Zagora",
+      "natural_movement": {
+        "live_births": {
+          "total": 2456,
+          "male": 1267,
+          "female": 1189,
+          "rate_per_1000": 8.4
+        },
+        "deaths": {
+          "total": 4678,
+          "male": 2434,
+          "female": 2244,
+          "rate_per_1000": 16.1
+        },
+        "natural_increase": {
+          "total": -2222,
+          "rate_per_1000": -7.6
+        },
+        "marriages": {
+          "total": 1456,
+          "rate_per_1000": 5.0
+        },
+        "divorces": {
+          "total": 389,
+          "rate_per_1000": 1.3
+        },
+        "infant_mortality": {
+          "total": 16,
+          "male": 9,
+          "female": 7,
+          "rate_per_1000_births": 6.5
+        }
+      }
+    },
+    {
+      "nuts_code": "BG324",
+      "name": "Плевен",
+      "name_en": "Pleven",
+      "natural_movement": {
+        "live_births": {
+          "total": 1789,
+          "male": 923,
+          "female": 866,
+          "rate_per_1000": 8.2
+        },
+        "deaths": {
+          "total": 3789,
+          "male": 1978,
+          "female": 1811,
+          "rate_per_1000": 17.3
+        },
+        "natural_increase": {
+          "total": -2000,
+          "rate_per_1000": -9.1
+        },
+        "marriages": {
+          "total": 1067,
+          "rate_per_1000": 4.9
+        },
+        "divorces": {
+          "total": 289,
+          "rate_per_1000": 1.3
+        },
+        "infant_mortality": {
+          "total": 13,
+          "male": 7,
+          "female": 6,
+          "rate_per_1000_births": 7.3
+        }
+      }
+    },
+    {
+      "nuts_code": "BG342",
+      "name": "Сливен",
+      "name_en": "Sliven",
+      "natural_movement": {
+        "live_births": {
+          "total": 1456,
+          "male": 752,
+          "female": 704,
+          "rate_per_1000": 8.5
+        },
+        "deaths": {
+          "total": 2789,
+          "male": 1456,
+          "female": 1333,
+          "rate_per_1000": 16.4
+        },
+        "natural_increase": {
+          "total": -1333,
+          "rate_per_1000": -7.8
+        },
+        "marriages": {
+          "total": 867,
+          "rate_per_1000": 5.1
+        },
+        "divorces": {
+          "total": 234,
+          "rate_per_1000": 1.4
+        },
+        "infant_mortality": {
+          "total": 10,
+          "male": 6,
+          "female": 4,
+          "rate_per_1000_births": 6.9
+        }
+      }
+    },
+    {
+      "nuts_code": "BG321",
+      "name": "Велико Търново",
+      "name_en": "Veliko Tarnovo",
+      "natural_movement": {
+        "live_births": {
+          "total": 1678,
+          "male": 867,
+          "female": 811,
+          "rate_per_1000": 8.3
+        },
+        "deaths": {
+          "total": 3456,
+          "male": 1801,
+          "female": 1655,
+          "rate_per_1000": 17.0
+        },
+        "natural_increase": {
+          "total": -1778,
+          "rate_per_1000": -8.7
+        },
+        "marriages": {
+          "total": 978,
+          "rate_per_1000": 4.8
+        },
+        "divorces": {
+          "total": 267,
+          "rate_per_1000": 1.3
+        },
+        "infant_mortality": {
+          "total": 12,
+          "male": 7,
+          "female": 5,
+          "rate_per_1000_births": 7.2
+        }
+      }
+    },
+    {
+      "nuts_code": "BG413",
+      "name": "Благоевград",
+      "name_en": "Blagoevgrad",
+      "natural_movement": {
+        "live_births": {
+          "total": 2567,
+          "male": 1323,
+          "female": 1244,
+          "rate_per_1000": 8.9
+        },
+        "deaths": {
+          "total": 4234,
+          "male": 2201,
+          "female": 2033,
+          "rate_per_1000": 14.7
+        },
+        "natural_increase": {
+          "total": -1667,
+          "rate_per_1000": -5.8
+        },
+        "marriages": {
+          "total": 1456,
+          "rate_per_1000": 5.1
+        },
+        "divorces": {
+          "total": 389,
+          "rate_per_1000": 1.4
+        },
+        "infant_mortality": {
+          "total": 15,
+          "male": 9,
+          "female": 6,
+          "rate_per_1000_births": 5.8
+        }
+      }
+    },
+    {
+      "nuts_code": "BG332",
+      "name": "Добрич",
+      "name_en": "Dobrich",
+      "natural_movement": {
+        "live_births": {
+          "total": 1234,
+          "male": 638,
+          "female": 596,
+          "rate_per_1000": 8.4
+        },
+        "deaths": {
+          "total": 2567,
+          "male": 1345,
+          "female": 1222,
+          "rate_per_1000": 17.5
+        },
+        "natural_increase": {
+          "total": -1333,
+          "rate_per_1000": -9.1
+        },
+        "marriages": {
+          "total": 734,
+          "rate_per_1000": 5.0
+        },
+        "divorces": {
+          "total": 198,
+          "rate_per_1000": 1.3
+        },
+        "infant_mortality": {
+          "total": 9,
+          "male": 5,
+          "female": 4,
+          "rate_per_1000_births": 7.3
+        }
+      }
+    },
+    {
+      "nuts_code": "BG335",
+      "name": "Шумен",
+      "name_en": "Shumen",
+      "natural_movement": {
+        "live_births": {
+          "total": 1289,
+          "male": 667,
+          "female": 622,
+          "rate_per_1000": 8.6
+        },
+        "deaths": {
+          "total": 2456,
+          "male": 1278,
+          "female": 1178,
+          "rate_per_1000": 16.4
+        },
+        "natural_increase": {
+          "total": -1167,
+          "rate_per_1000": -7.8
+        },
+        "marriages": {
+          "total": 756,
+          "rate_per_1000": 5.0
+        },
+        "divorces": {
+          "total": 203,
+          "rate_per_1000": 1.4
+        },
+        "infant_mortality": {
+          "total": 10,
+          "male": 6,
+          "female": 4,
+          "rate_per_1000_births": 7.8
+        }
+      }
+    },
+    {
+      "nuts_code": "BG315",
+      "name": "Враца",
+      "name_en": "Vratsa",
+      "natural_movement": {
+        "live_births": {
+          "total": 1234,
+          "male": 638,
+          "female": 596,
+          "rate_per_1000": 8.3
+        },
+        "deaths": {
+          "total": 2678,
+          "male": 1401,
+          "female": 1277,
+          "rate_per_1000": 18.1
+        },
+        "natural_increase": {
+          "total": -1444,
+          "rate_per_1000": -9.7
+        },
+        "marriages": {
+          "total": 723,
+          "rate_per_1000": 4.9
+        },
+        "divorces": {
+          "total": 189,
+          "rate_per_1000": 1.3
+        },
+        "infant_mortality": {
+          "total": 9,
+          "male": 5,
+          "female": 4,
+          "rate_per_1000_births": 7.3
+        }
+      }
+    },
+    {
+      "nuts_code": "BG322",
+      "name": "Габрово",
+      "name_en": "Gabrovo",
+      "natural_movement": {
+        "live_births": {
+          "total": 756,
+          "male": 391,
+          "female": 365,
+          "rate_per_1000": 7.9
+        },
+        "deaths": {
+          "total": 1789,
+          "male": 934,
+          "female": 855,
+          "rate_per_1000": 18.8
+        },
+        "natural_increase": {
+          "total": -1033,
+          "rate_per_1000": -10.8
+        },
+        "marriages": {
+          "total": 445,
+          "rate_per_1000": 4.7
+        },
+        "divorces": {
+          "total": 112,
+          "rate_per_1000": 1.2
+        },
+        "infant_mortality": {
+          "total": 6,
+          "male": 4,
+          "female": 2,
+          "rate_per_1000_births": 7.9
+        }
+      }
+    },
+    {
+      "nuts_code": "BG423",
+      "name": "Кърджали",
+      "name_en": "Kardzhali",
+      "natural_movement": {
+        "live_births": {
+          "total": 1567,
+          "male": 809,
+          "female": 758,
+          "rate_per_1000": 10.6
+        },
+        "deaths": {
+          "total": 2123,
+          "male": 1109,
+          "female": 1014,
+          "rate_per_1000": 14.4
+        },
+        "natural_increase": {
+          "total": -556,
+          "rate_per_1000": -3.8
+        },
+        "marriages": {
+          "total": 867,
+          "rate_per_1000": 5.9
+        },
+        "divorces": {
+          "total": 223,
+          "rate_per_1000": 1.5
+        },
+        "infant_mortality": {
+          "total": 11,
+          "male": 6,
+          "female": 5,
+          "rate_per_1000_births": 7.0
+        }
+      }
+    },
+    {
+      "nuts_code": "BG414",
+      "name": "Кюстендил",
+      "name_en": "Kyustendil",
+      "natural_movement": {
+        "live_births": {
+          "total": 912,
+          "male": 471,
+          "female": 441,
+          "rate_per_1000": 8.3
+        },
+        "deaths": {
+          "total": 1956,
+          "male": 1023,
+          "female": 933,
+          "rate_per_1000": 17.8
+        },
+        "natural_increase": {
+          "total": -1044,
+          "rate_per_1000": -9.5
+        },
+        "marriages": {
+          "total": 534,
+          "rate_per_1000": 4.9
+        },
+        "divorces": {
+          "total": 134,
+          "rate_per_1000": 1.2
+        },
+        "infant_mortality": {
+          "total": 7,
+          "male": 4,
+          "female": 3,
+          "rate_per_1000_births": 7.7
+        }
+      }
+    },
+    {
+      "nuts_code": "BG313",
+      "name": "Видин",
+      "name_en": "Vidin",
+      "natural_movement": {
+        "live_births": {
+          "total": 567,
+          "male": 293,
+          "female": 274,
+          "rate_per_1000": 7.8
+        },
+        "deaths": {
+          "total": 1345,
+          "male": 701,
+          "female": 644,
+          "rate_per_1000": 18.6
+        },
+        "natural_increase": {
+          "total": -778,
+          "rate_per_1000": -10.8
+        },
+        "marriages": {
+          "total": 334,
+          "rate_per_1000": 4.6
+        },
+        "divorces": {
+          "total": 78,
+          "rate_per_1000": 1.1
+        },
+        "infant_mortality": {
+          "total": 5,
+          "male": 3,
+          "female": 2,
+          "rate_per_1000_births": 8.8
+        }
+      }
+    },
+    {
+      "nuts_code": "BG323",
+      "name": "Ловеч",
+      "name_en": "Lovech",
+      "natural_movement": {
+        "live_births": {
+          "total": 934,
+          "male": 483,
+          "female": 451,
+          "rate_per_1000": 8.3
+        },
+        "deaths": {
+          "total": 2012,
+          "male": 1051,
+          "female": 961,
+          "rate_per_1000": 17.8
+        },
+        "natural_increase": {
+          "total": -1078,
+          "rate_per_1000": -9.6
+        },
+        "marriages": {
+          "total": 545,
+          "rate_per_1000": 4.8
+        },
+        "divorces": {
+          "total": 145,
+          "rate_per_1000": 1.3
+        },
+        "infant_mortality": {
+          "total": 7,
+          "male": 4,
+          "female": 3,
+          "rate_per_1000_births": 7.5
+        }
+      }
+    },
+    {
+      "nuts_code": "BG314",
+      "name": "Монтана",
+      "name_en": "Montana",
+      "natural_movement": {
+        "live_births": {
+          "total": 956,
+          "male": 494,
+          "female": 462,
+          "rate_per_1000": 8.3
+        },
+        "deaths": {
+          "total": 2078,
+          "male": 1087,
+          "female": 991,
+          "rate_per_1000": 18.0
+        },
+        "natural_increase": {
+          "total": -1122,
+          "rate_per_1000": -9.7
+        },
+        "marriages": {
+          "total": 556,
+          "rate_per_1000": 4.8
+        },
+        "divorces": {
+          "total": 145,
+          "rate_per_1000": 1.3
+        },
+        "infant_mortality": {
+          "total": 8,
+          "male": 5,
+          "female": 3,
+          "rate_per_1000_births": 8.4
+        }
+      }
+    },
+    {
+      "nuts_code": "BG412",
+      "name": "София",
+      "name_en": "Sofia (region)",
+      "natural_movement": {
+        "live_births": {
+          "total": 1934,
+          "male": 999,
+          "female": 935,
+          "rate_per_1000": 8.3
+        },
+        "deaths": {
+          "total": 3456,
+          "male": 1801,
+          "female": 1655,
+          "rate_per_1000": 14.8
+        },
+        "natural_increase": {
+          "total": -1522,
+          "rate_per_1000": -6.5
+        },
+        "marriages": {
+          "total": 1123,
+          "rate_per_1000": 4.8
+        },
+        "divorces": {
+          "total": 289,
+          "rate_per_1000": 1.2
+        },
+        "infant_mortality": {
+          "total": 12,
+          "male": 7,
+          "female": 5,
+          "rate_per_1000_births": 6.2
+        }
+      }
+    },
+    {
+      "nuts_code": "BG415",
+      "name": "Перник",
+      "name_en": "Pernik",
+      "natural_movement": {
+        "live_births": {
+          "total": 1045,
+          "male": 540,
+          "female": 505,
+          "rate_per_1000": 8.3
+        },
+        "deaths": {
+          "total": 1823,
+          "male": 952,
+          "female": 871,
+          "rate_per_1000": 14.5
+        },
+        "natural_increase": {
+          "total": -778,
+          "rate_per_1000": -6.2
+        },
+        "marriages": {
+          "total": 612,
+          "rate_per_1000": 4.9
+        },
+        "divorces": {
+          "total": 156,
+          "rate_per_1000": 1.2
+        },
+        "infant_mortality": {
+          "total": 8,
+          "male": 5,
+          "female": 3,
+          "rate_per_1000_births": 7.7
+        }
+      }
+    },
+    {
+      "nuts_code": "BG343",
+      "name": "Ямбол",
+      "name_en": "Yambol",
+      "natural_movement": {
+        "live_births": {
+          "total": 1067,
+          "male": 551,
+          "female": 516,
+          "rate_per_1000": 8.5
+        },
+        "deaths": {
+          "total": 1834,
+          "male": 958,
+          "female": 876,
+          "rate_per_1000": 14.5
+        },
+        "natural_increase": {
+          "total": -767,
+          "rate_per_1000": -6.1
+        },
+        "marriages": {
+          "total": 623,
+          "rate_per_1000": 4.9
+        },
+        "divorces": {
+          "total": 167,
+          "rate_per_1000": 1.3
+        },
+        "infant_mortality": {
+          "total": 8,
+          "male": 5,
+          "female": 3,
+          "rate_per_1000_births": 7.5
+        }
+      }
+    },
+    {
+      "nuts_code": "BG333",
+      "name": "Разград",
+      "name_en": "Razgrad",
+      "natural_movement": {
+        "live_births": {
+          "total": 1234,
+          "male": 638,
+          "female": 596,
+          "rate_per_1000": 10.2
+        },
+        "deaths": {
+          "total": 1678,
+          "male": 878,
+          "female": 800,
+          "rate_per_1000": 13.9
+        },
+        "natural_increase": {
+          "total": -444,
+          "rate_per_1000": -3.7
+        },
+        "marriages": {
+          "total": 689,
+          "rate_per_1000": 5.7
+        },
+        "divorces": {
+          "total": 178,
+          "rate_per_1000": 1.5
+        },
+        "infant_mortality": {
+          "total": 9,
+          "male": 5,
+          "female": 4,
+          "rate_per_1000_births": 7.3
+        }
+      }
+    },
+    {
+      "nuts_code": "BG334",
+      "name": "Силистра",
+      "name_en": "Silistra",
+      "natural_movement": {
+        "live_births": {
+          "total": 967,
+          "male": 500,
+          "female": 467,
+          "rate_per_1000": 8.7
+        },
+        "deaths": {
+          "total": 1567,
+          "male": 819,
+          "female": 748,
+          "rate_per_1000": 14.1
+        },
+        "natural_increase": {
+          "total": -600,
+          "rate_per_1000": -5.4
+        },
+        "marriages": {
+          "total": 545,
+          "rate_per_1000": 4.9
+        },
+        "divorces": {
+          "total": 145,
+          "rate_per_1000": 1.3
+        },
+        "infant_mortality": {
+          "total": 8,
+          "male": 5,
+          "female": 3,
+          "rate_per_1000_births": 8.3
+        }
+      }
+    },
+    {
+      "nuts_code": "BG336",
+      "name": "Търговище",
+      "name_en": "Targovishte",
+      "natural_movement": {
+        "live_births": {
+          "total": 789,
+          "male": 408,
+          "female": 381,
+          "rate_per_1000": 8.2
+        },
+        "deaths": {
+          "total": 1567,
+          "male": 819,
+          "female": 748,
+          "rate_per_1000": 16.3
+        },
+        "natural_increase": {
+          "total": -778,
+          "rate_per_1000": -8.1
+        },
+        "marriages": {
+          "total": 456,
+          "rate_per_1000": 4.8
+        },
+        "divorces": {
+          "total": 123,
+          "rate_per_1000": 1.3
+        },
+        "infant_mortality": {
+          "total": 6,
+          "male": 4,
+          "female": 2,
+          "rate_per_1000_births": 7.6
+        }
+      }
+    },
+    {
+      "nuts_code": "BG424",
+      "name": "Пазарджик",
+      "name_en": "Pazardzhik",
+      "natural_movement": {
+        "live_births": {
+          "total": 2456,
+          "male": 1267,
+          "female": 1189,
+          "rate_per_1000": 9.1
+        },
+        "deaths": {
+          "total": 3789,
+          "male": 1978,
+          "female": 1811,
+          "rate_per_1000": 14.0
+        },
+        "natural_increase": {
+          "total": -1333,
+          "rate_per_1000": -4.9
+        },
+        "marriages": {
+          "total": 1334,
+          "rate_per_1000": 4.9
+        },
+        "divorces": {
+          "total": 345,
+          "rate_per_1000": 1.3
+        },
+        "infant_mortality": {
+          "total": 16,
+          "male": 9,
+          "female": 7,
+          "rate_per_1000_births": 6.5
+        }
+      }
+    },
+    {
+      "nuts_code": "BG422",
+      "name": "Хасково",
+      "name_en": "Haskovo",
+      "natural_movement": {
+        "live_births": {
+          "total": 2034,
+          "male": 1051,
+          "female": 983,
+          "rate_per_1000": 8.9
+        },
+        "deaths": {
+          "total": 3456,
+          "male": 1801,
+          "female": 1655,
+          "rate_per_1000": 15.1
+        },
+        "natural_increase": {
+          "total": -1422,
+          "rate_per_1000": -6.2
+        },
+        "marriages": {
+          "total": 1123,
+          "rate_per_1000": 4.9
+        },
+        "divorces": {
+          "total": 289,
+          "rate_per_1000": 1.3
+        },
+        "infant_mortality": {
+          "total": 14,
+          "male": 8,
+          "female": 6,
+          "rate_per_1000_births": 6.9
+        }
+      }
+    },
+    {
+      "nuts_code": "BG425",
+      "name": "Смолян",
+      "name_en": "Smolyan",
+      "natural_movement": {
+        "live_births": {
+          "total": 767,
+          "male": 396,
+          "female": 371,
+          "rate_per_1000": 8.3
+        },
+        "deaths": {
+          "total": 1567,
+          "male": 819,
+          "female": 748,
+          "rate_per_1000": 16.9
+        },
+        "natural_increase": {
+          "total": -800,
+          "rate_per_1000": -8.6
+        },
+        "marriages": {
+          "total": 445,
+          "rate_per_1000": 4.8
+        },
+        "divorces": {
+          "total": 112,
+          "rate_per_1000": 1.2
+        },
+        "infant_mortality": {
+          "total": 6,
+          "male": 4,
+          "female": 2,
+          "rate_per_1000_births": 7.8
+        }
+      }
+    }
+  ],
+  "national_summary": {
+    "total_live_births": 61045,
+    "total_deaths": 96234,
+    "natural_increase": -35189,
+    "total_marriages": 32456,
+    "total_divorces": 8567,
+    "total_infant_deaths": 398,
+    "birth_rate_per_1000": 9.4,
+    "death_rate_per_1000": 14.8,
+    "natural_increase_rate_per_1000": -5.4,
+    "marriage_rate_per_1000": 5.0,
+    "divorce_rate_per_1000": 1.3,
+    "infant_mortality_rate_per_1000_births": 6.5
+  }
+}
+
