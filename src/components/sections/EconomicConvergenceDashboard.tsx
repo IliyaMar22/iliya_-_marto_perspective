@@ -510,8 +510,8 @@ const EconomicConvergenceDashboard: React.FC = () => {
                 <div className="space-y-4">
                   <div className="flex justify-between items-center p-3 rounded-xl bg-white/10"><span>2005 Starting Point</span><span className="font-bold text-xl">~25%</span></div>
                   <div className="flex justify-between items-center p-3 rounded-xl bg-white/10"><span>2024 Current Level</span><span className="font-bold text-xl text-emerald-400">65%</span></div>
-                  <div className="flex justify-between items-center p-3 rounded-xl bg-white/10"><span>Bulgaria GDP/capita (PPP)</span><span className="font-bold text-xl">$42,477</span></div>
-                  <div className="flex justify-between items-center p-3 rounded-xl bg-white/10"><span>EU Average GDP/capita</span><span className="font-bold text-xl">$65,140</span></div>
+                  <div className="flex justify-between items-center p-3 rounded-xl bg-white/10"><span>Bulgaria GDP/capita (PPP)</span><span className="font-bold text-xl">€39,000</span></div>
+                  <div className="flex justify-between items-center p-3 rounded-xl bg-white/10"><span>EU Average GDP/capita</span><span className="font-bold text-xl">€60,000</span></div>
                 </div>
               </motion.div>
 

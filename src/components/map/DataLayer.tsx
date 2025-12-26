@@ -50,13 +50,15 @@ export default function DataLayer({ regions, onRegionHover }: DataLayerProps) {
                 <h3 className="text-lime-400 font-bold mb-2">{region.name}</h3>
                 <div className="space-y-1 text-xs text-white">
                   <div className="flex justify-between">
-                    <span>GDP:</span>
-                    <span className="font-mono">${region.metrics.gdp.toLocaleString()}</span>
+                    <span>GDP Total:</span>
+                    <span className="font-mono">€{(region.metrics.gdp / 1000).toFixed(1)}B</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span>PPP:</span>
-                    <span className="font-mono">{region.metrics.ppp}%</span>
-                  </div>
+                  {region.metrics.gdp_per_capita && (
+                    <div className="flex justify-between">
+                      <span>GDP per Capita:</span>
+                      <span className="font-mono">{region.metrics.gdp_per_capita.toLocaleString()} BGN</span>
+                    </div>
+                  )}
                   <div className="flex justify-between">
                     <span>Population:</span>
                     <span className="font-mono">{region.metrics.population.toLocaleString()}</span>

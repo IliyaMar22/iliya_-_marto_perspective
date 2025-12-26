@@ -140,8 +140,8 @@ export const EconomicGrowth: React.FC = () => {
             <AreaChart
               data={gdpDataPoints}
               height={400}
-              yAxisLabel="GDP (USD)"
-              formatYAxis={(value) => formatCurrency(value)}
+              yAxisLabel="GDP (EUR)"
+              formatYAxis={(value) => formatCurrency(value, 'EUR')}
             />
           </div>
         ) : (
@@ -164,8 +164,8 @@ export const EconomicGrowth: React.FC = () => {
             <LineChart
               data={gdpPerCapitaData}
               height={400}
-              yAxisLabel="GDP Per Capita (USD)"
-              formatYAxis={(value) => formatCurrency(value)}
+              yAxisLabel="GDP Per Capita (EUR)"
+              formatYAxis={(value) => formatCurrency(value, 'EUR')}
             />
           </div>
         ) : (

@@ -290,7 +290,7 @@ const ProsperitySection: React.FC<{ data: CategoryData }> = ({ data }) => {
             <LineChart
               data={data.GNI_PER_CAPITA}
               
-              yAxisLabel="Current US$"
+              yAxisLabel="Current EUR"
             />
           </div>
         )}
@@ -316,7 +316,7 @@ const ProsperitySection: React.FC<{ data: CategoryData }> = ({ data }) => {
             <BarChart
               data={data.FDI_INFLOWS_BOP.slice(-10)}
               
-              yAxisLabel="Current US$ (millions)"
+              yAxisLabel="Current EUR (millions)"
             />
           </div>
         )}
@@ -329,7 +329,7 @@ const ProsperitySection: React.FC<{ data: CategoryData }> = ({ data }) => {
             <LineChart
               data={data.HIGH_TECH_EXPORTS}
               
-              yAxisLabel="Current US$"
+              yAxisLabel="Current EUR"
             />
           </div>
         )}

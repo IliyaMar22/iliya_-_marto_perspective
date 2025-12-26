@@ -42,7 +42,7 @@ export default function MetricsPanel({ region, onClose }: MetricsPanelProps) {
           <div className="space-y-4">
             <MetricBar
               label="GDP per Capita"
-              value={region.metrics.gdp_per_capita || region.metrics.gdp}
+              value={region.metrics.gdp_per_capita || 0}
               max={70000}
               color="#D2FF00"
               unit="BGN"
@@ -50,7 +50,7 @@ export default function MetricsPanel({ region, onClose }: MetricsPanelProps) {
             <MetricBar
               label="GDP Total"
               value={region.metrics.gdp || 0}
-              max={80000}
+              max={100000}
               color="#82E6FF"
               unit="M BGN"
             />

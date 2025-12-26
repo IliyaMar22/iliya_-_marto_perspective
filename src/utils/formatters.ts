@@ -2,7 +2,7 @@
  * Format numbers for display
  */
 
-export const formatCurrency = (value: number, currency: string = 'USD'): string => {
+export const formatCurrency = (value: number, currency: string = 'EUR'): string => {
   if (value === null || value === undefined || isNaN(value)) return 'N/A';
   
   const formatter = new Intl.NumberFormat('en-US', {

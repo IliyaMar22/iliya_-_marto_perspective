@@ -761,7 +761,7 @@ const PDFDataDashboard: React.FC = () => {
                   <ul className="space-y-1 text-gray-700">
                     <li>• Household deposits: 0.95%</li>
                     <li>• Corporate deposits: 1.75%</li>
-                    <li>• USD deposits fell most (-80bp)</li>
+                    <li>• EUR deposits fell most (-80bp)</li>
                   </ul>
                 </div>
                 <div className="space-y-2">

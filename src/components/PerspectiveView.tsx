@@ -361,7 +361,13 @@ export default function PerspectiveView() {
                       <div className="flex justify-between items-center">
                         <span className="text-gray-400">GDP per Capita:</span>
                         <span className="font-mono text-white font-semibold">
-                          ${region.metrics.gdp.toLocaleString()}
+                          {(region.metrics.gdp_per_capita || 0).toLocaleString('en-US')} BGN
+                        </span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-gray-400">GDP Total:</span>
+                        <span className="font-mono text-white font-semibold">
+                          €{(region.metrics.gdp / 1000).toFixed(1)}B
                         </span>
                       </div>
                       <div className="flex justify-between items-center">
