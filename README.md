@@ -31,18 +31,28 @@ A comprehensive, multi-dimensional analytical platform showcasing Bulgaria's pro
 - **Data Fetching**: Axios
 - **UI Components**: Custom components with Radix UI primitives
 
+## 🚀 Quick Deploy
+
+**Deploy to Railway in 2 minutes:**
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template)
+
+Or see [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed deployment guides.
+
+---
+
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js 16+ and npm/yarn
+- Node.js 18+ and npm/yarn
 - Modern web browser
 
 ### Installation
 
 1. Clone the repository or navigate to the project directory:
 ```bash
-cd bulgaria-investment-dashboard
+cd perspective-for-bulgaria-iliya-martin
 ```
 
 2. Install dependencies:
@@ -55,7 +65,7 @@ npm install
 npm start
 ```
 
-The application will open at [http://localhost:3074](http://localhost:3074)
+The application will open at [http://localhost:3078](http://localhost:3078)
 
 ### Building for Production
 
@@ -64,6 +74,15 @@ npm run build
 ```
 
 This creates an optimized production build in the `build` folder.
+
+### Deploying
+
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for deployment instructions to:
+- Railway (Recommended)
+- Vercel
+- Netlify
+- Render
+- Docker
 
 ## Project Structure
 

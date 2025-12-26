@@ -42,7 +42,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "serve": "serve build --single",
-    "serve:production": "PORT=${PORT:-3000} serve build --single --listen tcp://0.0.0.0:$PORT"
+    "serve:production": "PORT=${PORT:-3000} serve build --single --listen tcp://0.0.0.0:$PORT",
+    "railway:build": "npm ci && npm run build",
+    "railway:start": "npx serve -s build -l $PORT"
   },
   "engines": {
     "node": ">=18.0.0",
