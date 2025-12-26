@@ -1,0 +1,183 @@
+{
+  "source": "National Statistical Institute (NSI) - Bulgaria",
+  "description": "Foreign Direct Investments in non-financial enterprises by statistical regions and districts (as of 31.12.2024)",
+  "unit": "Thousand euro",
+  "year": 2024,
+  "regions": [
+    {
+      "code": "BG",
+      "name": "TOTAL",
+      "fdi_2024": 33904702.9
+    },
+    {
+      "code": "BG31",
+      "name": "SEVEROZAPADEN",
+      "fdi_2024": 745500.6
+    },
+    {
+      "code": "BG311",
+      "name": "Vidin",
+      "fdi_2024": 43079.6
+    },
+    {
+      "code": "BG313",
+      "name": "Vratsa",
+      "fdi_2024": 177467.6
+    },
+    {
+      "code": "BG315",
+      "name": "Lovech",
+      "fdi_2024": 208296.0
+    },
+    {
+      "code": "BG312",
+      "name": "Montana",
+      "fdi_2024": 57140.3
+    },
+    {
+      "code": "BG314",
+      "name": "Pleven",
+      "fdi_2024": 259517.1
+    },
+    {
+      "code": "BG32",
+      "name": "SEVEREN TSENTRALEN",
+      "fdi_2024": 1753457.9
+    },
+    {
+      "code": "BG321",
+      "name": "Veliko Tarnovo",
+      "fdi_2024": 321369.6
+    },
+    {
+      "code": "BG322",
+      "name": "Gabrovo",
+      "fdi_2024": 487196.2
+    },
+    {
+      "code": "BG324",
+      "name": "Razgrad",
+      "fdi_2024": 317341.5
+    },
+    {
+      "code": "BG323",
+      "name": "Ruse",
+      "fdi_2024": 584663.3
+    },
+    {
+      "code": "BG325",
+      "name": "Silistra",
+      "fdi_2024": 42887.3
+    },
+    {
+      "code": "BG33",
+      "name": "SEVEROIZTOCHEN",
+      "fdi_2024": 2500766.5
+    },
+    {
+      "code": "BG331",
+      "name": "Varna",
+      "fdi_2024": 1648187.3
+    },
+    {
+      "code": "BG332",
+      "name": "Dobrich",
+      "fdi_2024": 336921.5
+    },
+    {
+      "code": "BG334",
+      "name": "Targovishte",
+      "fdi_2024": 278833.7
+    },
+    {
+      "code": "BG333",
+      "name": "Shumen",
+      "fdi_2024": 236824.0
+    },
+    {
+      "code": "BG34",
+      "name": "YUGOIZTOCHEN",
+      "fdi_2024": 3289897.7
+    },
+    {
+      "code": "BG341",
+      "name": "Burgas",
+      "fdi_2024": 2161765.9
+    },
+    {
+      "code": "BG342",
+      "name": "Sliven",
+      "fdi_2024": 169190.3
+    },
+    {
+      "code": "BG344",
+      "name": "Stara Zagora",
+      "fdi_2024": 910102.6
+    },
+    {
+      "code": "BG343",
+      "name": "Yambol",
+      "fdi_2024": 48838.9
+    },
+    {
+      "code": "BG41",
+      "name": "YUGOZAPADEN",
+      "fdi_2024": 21787838.6
+    },
+    {
+      "code": "BG413",
+      "name": "Blagoevgrad",
+      "fdi_2024": 673109.4
+    },
+    {
+      "code": "BG415",
+      "name": "Kyustendil",
+      "fdi_2024": 49079.7
+    },
+    {
+      "code": "BG414",
+      "name": "Pernik",
+      "fdi_2024": 268407.5
+    },
+    {
+      "code": "BG412",
+      "name": "Sofia",
+      "fdi_2024": 2528091.0
+    },
+    {
+      "code": "BG411",
+      "name": "Sofia (stolitsa)",
+      "fdi_2024": 18269151.0
+    },
+    {
+      "code": "BG42",
+      "name": "YUZHEN TSENTRALEN",
+      "fdi_2024": 3827241.6
+    },
+    {
+      "code": "BG425",
+      "name": "Kardzhali",
+      "fdi_2024": 320857.5
+    },
+    {
+      "code": "BG423",
+      "name": "Pazardzhik",
+      "fdi_2024": 647168.1
+    },
+    {
+      "code": "BG421",
+      "name": "Plovdiv",
+      "fdi_2024": 2612717.7
+    },
+    {
+      "code": "BG424",
+      "name": "Smolyan",
+      "fdi_2024": 84803.1
+    },
+    {
+      "code": "BG422",
+      "name": "Haskovo",
+      "fdi_2024": 161695.2
+    }
+  ]
+}

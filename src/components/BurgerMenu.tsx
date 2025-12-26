@@ -32,9 +32,10 @@ export default function BurgerMenu({ currentView, onViewChange }: BurgerMenuProp
       {/* Burger Button */}
       <motion.button
         onClick={toggleMenu}
-        className="fixed top-6 left-6 z-[100] w-14 h-14 bg-lime-400 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow"
+        className="fixed top-4 left-4 sm:top-6 sm:left-6 z-[100] w-12 h-12 sm:w-14 sm:h-14 bg-lime-400 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl active:shadow-md transition-shadow touch-manipulation"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
+        aria-label="Toggle menu"
       >
         <div className="w-6 h-5 flex flex-col justify-between">
           <motion.div
@@ -73,15 +74,15 @@ export default function BurgerMenu({ currentView, onViewChange }: BurgerMenuProp
             animate={{ x: 0 }}
             exit={{ x: -400 }}
             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-            className="fixed left-0 top-0 bottom-0 w-80 bg-gradient-to-b from-black to-dark-green border-r border-lime-400/30 z-[95] overflow-y-auto"
+            className="fixed left-0 top-0 bottom-0 w-[85vw] sm:w-80 max-w-sm bg-gradient-to-b from-black to-dark-green border-r border-lime-400/30 z-[95] overflow-y-auto touch-pan-y"
           >
-              <div className="p-8 pt-24">
+              <div className="p-4 sm:p-6 md:p-8 pt-20 sm:pt-24">
                 {/* Logo/Title */}
-                <div className="mb-8">
-                  <h2 className="text-2xl font-bold text-lime-400 mb-2">
+                <div className="mb-6 sm:mb-8">
+                  <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-lime-400 mb-1 sm:mb-2">
                     Perspective for Bulgaria
                   </h2>
-                  <p className="text-sm text-gray-400">Iliya & Martin</p>
+                  <p className="text-xs sm:text-sm text-gray-400">Iliya & Martin</p>
                 </div>
 
                 {/* Menu Items */}
@@ -90,26 +91,26 @@ export default function BurgerMenu({ currentView, onViewChange }: BurgerMenuProp
                     <motion.button
                       key={item.id}
                       onClick={() => handleItemClick(item.id)}
-                      className={`w-full text-left px-4 py-3 rounded-lg transition-all ${
+                      className={`w-full text-left px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg transition-all touch-manipulation ${
                         currentView === item.id
                           ? 'bg-lime-400 text-black font-semibold'
-                          : 'bg-gray-900/50 text-gray-300 hover:bg-gray-800 hover:text-white'
+                          : 'bg-gray-900/50 text-gray-300 hover:bg-gray-800 hover:text-white active:bg-gray-700'
                       }`}
                       whileHover={{ x: 10 }}
                       whileTap={{ scale: 0.95 }}
                     >
-                      <span className="mr-3 text-xl">{item.icon}</span>
-                      {item.label.replace(/^[^\s]+\s/, '')}
+                      <span className="mr-2 sm:mr-3 text-lg sm:text-xl">{item.icon}</span>
+                      <span className="text-sm sm:text-base">{item.label.replace(/^[^\s]+\s/, '')}</span>
                     </motion.button>
                   ))}
                 </nav>
 
                 {/* Footer */}
-                <div className="mt-12 pt-6 border-t border-gray-700">
-                  <p className="text-xs text-gray-500">
+                <div className="mt-8 sm:mt-12 pt-4 sm:pt-6 border-t border-gray-700">
+                  <p className="text-[10px] sm:text-xs text-gray-500">
                     Data sources: NSI, World Bank, Eurostat
                   </p>
-                  <p className="text-xs text-gray-500 mt-2">
+                  <p className="text-[10px] sm:text-xs text-gray-500 mt-1 sm:mt-2">
                     © 2024 Perspective for Bulgaria
                   </p>
                 </div>

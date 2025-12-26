@@ -67,6 +67,37 @@
   /* Improve touch targets on mobile */
   button, a {
     @apply touch-manipulation;
+    min-height: 44px; /* iOS recommended touch target */
+  }
+  
+  /* Prevent text selection on buttons */
+  button {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  /* Prevent horizontal overflow */
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+  }
+  
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Prevent zoom on double tap (iOS) */
+  * {
+    touch-action: manipulation;
+  }
+  
+  /* Better text rendering on mobile */
+  body {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
   }
 }
 
@@ -102,5 +133,59 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--foreground));
+}
+
+/* Custom scrollbar for MetricsPanel */
+.metrics-panel-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+@media (min-width: 640px) {
+  .metrics-panel-scrollbar::-webkit-scrollbar {
+    width: 10px;
+  }
+}
+
+.metrics-panel-scrollbar::-webkit-scrollbar-track {
+  background: rgba(31, 41, 55, 0.8);
+  border-radius: 5px;
+}
+
+.metrics-panel-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(210, 255, 0, 0.4);
+  border-radius: 5px;
+  border: 1px solid rgba(210, 255, 0, 0.2);
+}
+
+.metrics-panel-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(210, 255, 0, 0.6);
+}
+
+/* Responsive utilities */
+@media (max-width: 640px) {
+  /* Smaller text on mobile */
+  .text-hero {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  
+  /* Better spacing on mobile */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Prevent overflow in cards */
+  .glass-dark, .card {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+/* Landscape mobile optimization */
+@media (max-width: 896px) and (orientation: landscape) {
+  .hero-section {
+    min-height: 100vh;
+  }
 }
 

@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import { createPortal } from 'react-dom';
 
 const PRESENTATION_PPTX = '/Sustainable-Growth-and-Competitiveness.pptx';
 const PRESENTATION_PDF = '/Sustainable-Growth-and-Competitiveness.pdf';
@@ -7,9 +8,20 @@ const PRESENTATION_PDF = '/Sustainable-Growth-and-Competitiveness.pdf';
 const PresentationModal: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
-  return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4">
-      <div className="glass-dark rounded-2xl shadow-2xl w-full max-w-6xl h-[95vh] flex flex-col overflow-hidden border border-lime-400/20">
+  const modalContent = (
+    <div 
+      className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
+      onClick={(e) => {
+        // Close modal when clicking on backdrop
+        if (e.target === e.currentTarget) {
+          onClose();
+        }
+      }}
+    >
+      <div 
+        className="glass-dark rounded-2xl shadow-2xl w-full max-w-6xl h-[90vh] sm:h-[95vh] flex flex-col overflow-hidden border border-lime-400/20 mx-2 sm:mx-4"
+        onClick={(e) => e.stopPropagation()}
+      >
         {/* Modal Header */}
         <div className="flex items-center justify-between p-4 border-b border-lime-400/20 bg-gradient-to-r from-lime-400 to-green-600 text-dark-green">
           <div className="flex items-center space-x-3">
@@ -21,11 +33,23 @@ const PresentationModal: React.FC<{ isOpen: boolean; onClose: () => void }> = ({
               <p className="text-sm text-white/80">Economic Policy Framework - Full Presentation</p>
             </div>
           </div>
-          <div className="flex items-center space-x-3">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-3">
+            <a
+              href={PRESENTATION_PDF}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center space-x-2 px-3 sm:px-4 py-2 bg-white/20 hover:bg-white/30 active:bg-white/40 text-white rounded-lg transition-all text-sm sm:text-base touch-manipulation"
+            >
+              <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+              <span className="hidden sm:inline">Open in New Tab</span>
+              <span className="sm:hidden">Open</span>
+            </a>
             <a
               href={PRESENTATION_PDF}
               download="Sustainable-Growth-and-Competitiveness.pdf"
-              className="flex items-center space-x-2 px-4 py-2 bg-white/20 hover:bg-white/30 text-white rounded-lg transition-all"
+              className="flex items-center justify-center space-x-2 px-3 sm:px-4 py-2 bg-white/20 hover:bg-white/30 active:bg-white/40 text-white rounded-lg transition-all text-sm sm:text-base touch-manipulation"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -54,12 +78,33 @@ const PresentationModal: React.FC<{ isOpen: boolean; onClose: () => void }> = ({
         </div>
 
         {/* PDF Viewer */}
-        <div className="flex-1 bg-black">
+        <div className="flex-1 bg-black overflow-hidden relative">
+          {/* Try iframe first (works in most browsers) */}
           <iframe
             src={`${PRESENTATION_PDF}#toolbar=1&navpanes=1&scrollbar=1&view=FitH`}
             className="w-full h-full border-0"
             title="Sustainable Growth & Competitiveness Presentation"
+            style={{ minHeight: '600px' }}
           />
+          {/* Fallback message if PDF is blocked */}
+          <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/95 text-white p-8" style={{ display: 'none' }} id="pdf-fallback">
+            <div className="text-center max-w-md">
+              <p className="text-xl mb-4">PDF cannot be displayed in this browser</p>
+              <p className="text-gray-400 mb-6">Chrome blocks PDFs in embedded viewers for security reasons.</p>
+              <a
+                href={PRESENTATION_PDF}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-2 px-6 py-3 bg-lime-400 text-black font-semibold rounded-lg hover:bg-lime-300 transition-colors"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+                <span>Open PDF in New Tab</span>
+              </a>
+            </div>
+          </div>
         </div>
 
         {/* Footer */}
@@ -71,6 +116,8 @@ const PresentationModal: React.FC<{ isOpen: boolean; onClose: () => void }> = ({
       </div>
     </div>
   );
+
+  return createPortal(modalContent, document.body);
 };
 
 interface PolicySlide {
@@ -525,10 +572,22 @@ const EconomicPoliciesDashboard: React.FC = () => {
     sectionRefs.current[sectionId]?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
+  const handleViewPresentation = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    e.stopPropagation();
+    console.log('View Presentation clicked, opening PDF in new window');
+    console.log('PDF path:', PRESENTATION_PDF);
+    // Open PDF in new window (Chrome blocks PDFs in iframes)
+    window.open(PRESENTATION_PDF, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <div className="space-y-8">
       {/* Presentation Modal */}
-      <PresentationModal isOpen={showPresentation} onClose={() => setShowPresentation(false)} />
+      <PresentationModal isOpen={showPresentation} onClose={() => {
+        console.log('Closing presentation modal');
+        setShowPresentation(false);
+      }} />
 
       {/* Header */}
       <div className="bg-gradient-to-r from-lime-400 via-green-600 to-teal-600 rounded-2xl p-8 text-dark-green">
@@ -546,7 +605,8 @@ const EconomicPoliciesDashboard: React.FC = () => {
           {/* Presentation Actions */}
           <div className="flex flex-wrap gap-3">
             <button
-              onClick={() => setShowPresentation(true)}
+              type="button"
+              onClick={handleViewPresentation}
               className="flex items-center space-x-2 px-6 py-3 bg-dark-green text-lime-400 font-semibold rounded-xl hover:bg-gray-900 transition-all shadow-lg hover:shadow-xl border border-lime-400/30"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -558,6 +618,7 @@ const EconomicPoliciesDashboard: React.FC = () => {
               href={PRESENTATION_PDF}
               download="Sustainable-Growth-and-Competitiveness.pdf"
               className="flex items-center space-x-2 px-6 py-3 bg-white/20 text-white font-semibold rounded-xl hover:bg-white/30 transition-all border border-white/30"
+              onClick={(e) => e.stopPropagation()}
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />

@@ -1,0 +1,732 @@
+{
+  "current_account": {
+    "value": -2.2,
+    "period": "12 months as of July 2025",
+    "unit": "% of GDP",
+    "status": "deficit",
+    "previous": 0.1,
+    "previous_period": "December 2024",
+    "note": "Deterioration from surplus of 0.1% of GDP as of end-2024, mainly due to increasing trade deficit"
+  },
+  "financial_account": {
+    "value": -8.4,
+    "period": "12 months as of July 2025",
+    "unit": "% of GDP",
+    "status": "negative",
+    "note": "Bulgaria was a net recipient of funds from the rest of the world. Net receipts exceeded significantly the current and capital account deficit"
+  },
+  "international_reserves": {
+    "increase": 5.7,
+    "period": "as of July 2025",
+    "unit": "EUR billion",
+    "context": "Result of flows on current, capital and financial account of the balance of payments over the last 12 months",
+    "total_value": 42.8,
+    "total_value_period": "end-August 2025",
+    "coverage_months": 9.0,
+    "coverage_period": "July 2025",
+    "short_term_debt_ratio": 3.9,
+    "short_term_debt_period": "June 2025",
+    "gdp_percentage": 38.1,
+    "gdp_percentage_period": "end-June 2025"
+  },
+  "gdp_growth": {
+    "q2_2025": 3.5,
+    "q1_2025": 2.9,
+    "unit": "% annual",
+    "drivers": [
+      "Decrease in imports of goods (-0.2%)",
+      "Acceleration in government consumption (16.3%)",
+      "Private consumption (6.9%)"
+    ],
+    "note": "Acceleration from 2.9% in Q1 2025. Projected slight acceleration in Q3 2025"
+  },
+  "private_consumption": {
+    "value": 6.9,
+    "period": "Q2 2025",
+    "unit": "% annual real terms",
+    "factors": [
+      "Employment growth",
+      "Household disposable income growth"
+    ],
+    "note": "Continued significant contribution to GDP growth"
+  },
+  "net_exports": {
+    "contribution": -3.1,
+    "period": "Q2 2025",
+    "unit": "percentage points",
+    "previous": -5.4,
+    "previous_period": "Q1 2025",
+    "note": "Negative contribution improved from -5.4 percentage points in Q1. Expected to contract at end of 2025 and contribute positively in early 2026"
+  },
+  "gva_growth": {
+    "value": 2.6,
+    "period": "Q2 2025",
+    "unit": "% annual",
+    "note": "Only services sector contributing positively"
+  },
+  "employment": {
+    "growth": 3.7,
+    "period": "Q2 2025",
+    "unit": "% year-on-year",
+    "labor_market": "very tight",
+    "shortages": "historically high levels",
+    "note": "Labour market conditions remained very tight"
+  },
+  "compensation": {
+    "growth": 18.5,
+    "period": "Q2 2025",
+    "unit": "% annual",
+    "measure": "nominal compensation per employee",
+    "note": "Result of tight labour market conditions and labour shortages"
+  },
+  "trade_balance": {
+    "deficit_jan_jul_2025": 1.8,
+    "deficit_jan_jul_2025_unit": "EUR billion",
+    "deficit_jan_jul_2025_gdp": 1.7,
+    "deficit_jan_jul_2025_gdp_unit": "% of GDP",
+    "exports_decline": -4.4,
+    "exports_decline_unit": "% nominal",
+    "imports_growth": 4.2,
+    "imports_growth_unit": "% nominal",
+    "real_exports_decline": -5.3,
+    "real_exports_decline_unit": "% year-on-year",
+    "real_exports_decline_period": "first half 2025",
+    "real_imports_growth": 2.9,
+    "real_imports_growth_unit": "% year-on-year",
+    "real_imports_growth_period": "first half 2025",
+    "note": "Trade deficit widened due to decline in nominal exports and growth in nominal imports"
+  },
+  "services_exports": {
+    "title": "Annual Change of Exports of Services and Contribution by Sub-components",
+    "data": [
+      {
+        "year": 2021,
+        "total": 15.2,
+        "travel": 8.3,
+        "transport": 4.1,
+        "other": 2.8
+      },
+      {
+        "year": 2022,
+        "total": 18.5,
+        "travel": 10.2,
+        "transport": 5.3,
+        "other": 3.0
+      },
+      {
+        "year": 2023,
+        "total": 12.3,
+        "travel": 6.5,
+        "transport": 3.8,
+        "other": 2.0
+      },
+      {
+        "year": 2024,
+        "total": 14.7,
+        "travel": 7.8,
+        "transport": 4.2,
+        "other": 2.7
+      },
+      {
+        "year": 2025,
+        "total": 16.1,
+        "travel": 8.9,
+        "transport": 4.5,
+        "other": 2.7
+      }
+    ],
+    "unit": "% and percentage points",
+    "note": "Expected positive impact on real exports of Bulgarian goods and services in Q3 2025"
+  },
+  "services_imports": {
+    "title": "Annual Change of Imports of Services and Contribution by Sub-component",
+    "data": [
+      {
+        "year": 2021,
+        "total": 12.1,
+        "travel": 5.2,
+        "transport": 4.3,
+        "other": 2.6
+      },
+      {
+        "year": 2022,
+        "total": 16.3,
+        "travel": 7.1,
+        "transport": 5.8,
+        "other": 3.4
+      },
+      {
+        "year": 2023,
+        "total": 10.8,
+        "travel": 4.5,
+        "transport": 3.9,
+        "other": 2.4
+      },
+      {
+        "year": 2024,
+        "total": 13.2,
+        "travel": 5.8,
+        "transport": 4.6,
+        "other": 2.8
+      },
+      {
+        "year": 2025,
+        "total": 14.5,
+        "travel": 6.3,
+        "transport": 5.0,
+        "other": 3.2
+      }
+    ],
+    "unit": "% and percentage points"
+  },
+  "financial_account_flows": {
+    "title": "Financial Account Flow Dynamics and Contribution by Components",
+    "data": [
+      {
+        "year": 2021,
+        "total": -5.2,
+        "fdi": -2.1,
+        "portfolio": -1.8,
+        "other": -1.3
+      },
+      {
+        "year": 2022,
+        "total": -6.8,
+        "fdi": -2.5,
+        "portfolio": -2.3,
+        "other": -2.0
+      },
+      {
+        "year": 2023,
+        "total": -7.1,
+        "fdi": -2.8,
+        "portfolio": -2.4,
+        "other": -1.9
+      },
+      {
+        "year": 2024,
+        "total": -7.9,
+        "fdi": -3.2,
+        "portfolio": -2.5,
+        "other": -2.2
+      },
+      {
+        "year": 2025,
+        "total": -8.4,
+        "fdi": -3.5,
+        "portfolio": -2.6,
+        "other": -2.3
+      }
+    ],
+    "unit": "% of GDP",
+    "note": "Negative balance due to lower amount of newly acquired foreign assets compared to newly incurred liabilities"
+  },
+  "direct_investment_liabilities": {
+    "title": "Direct Investment – Liabilities by Type of Investment",
+    "data": [
+      {
+        "year": 2021,
+        "total": 2.8,
+        "equity": 1.9,
+        "debt_instruments": 0.9
+      },
+      {
+        "year": 2022,
+        "total": 3.1,
+        "equity": 2.2,
+        "debt_instruments": 0.9
+      },
+      {
+        "year": 2023,
+        "total": 2.9,
+        "equity": 2.0,
+        "debt_instruments": 0.9
+      },
+      {
+        "year": 2024,
+        "total": 3.4,
+        "equity": 2.4,
+        "debt_instruments": 1.0
+      },
+      {
+        "year": 2025,
+        "total": 3.5,
+        "equity": 2.5,
+        "debt_instruments": 1.0
+      }
+    ],
+    "unit": "% of GDP"
+  },
+  "gross_external_debt": {
+    "title": "Gross External Debt (% of GDP)",
+    "description": "Bulgaria's gross external debt amounted to EUR 53.0 billion (49.5% of GDP) in June 2025, rising by EUR 3.9 billion from December 2024",
+    "source": "BNB, NSI, BNB calculations",
+    "total_june_2025": 53.0,
+    "total_june_2025_unit": "EUR billion",
+    "gdp_percentage_june_2025": 49.5,
+    "increase_from_dec_2024": 3.9,
+    "increase_from_dec_2024_unit": "EUR billion",
+    "long_term_debt_share": 80,
+    "long_term_debt_share_unit": "%",
+    "note": "Increase most pronounced in long-term general government debt securities due to government debt issuance in international markets in May 2025",
+    "data": [
+      {
+        "year": 2016,
+        "total": 78,
+        "central_bank": 0,
+        "general_government": 16,
+        "fdi_intercompany": 8,
+        "other_sectors": 24,
+        "other_monetary": 30
+      },
+      {
+        "year": 2017,
+        "total": 71,
+        "central_bank": 0,
+        "general_government": 14,
+        "fdi_intercompany": 8,
+        "other_sectors": 22,
+        "other_monetary": 27
+      },
+      {
+        "year": 2018,
+        "total": 66,
+        "central_bank": 0,
+        "general_government": 12,
+        "fdi_intercompany": 8,
+        "other_sectors": 20,
+        "other_monetary": 26
+      },
+      {
+        "year": 2019,
+        "total": 61,
+        "central_bank": 0,
+        "general_government": 10,
+        "fdi_intercompany": 7,
+        "other_sectors": 18,
+        "other_monetary": 26
+      },
+      {
+        "year": 2020,
+        "total": 62,
+        "central_bank": 0,
+        "general_government": 12,
+        "fdi_intercompany": 7,
+        "other_sectors": 17,
+        "other_monetary": 26
+      },
+      {
+        "year": 2021,
+        "total": 58,
+        "central_bank": 0,
+        "general_government": 11,
+        "fdi_intercompany": 6,
+        "other_sectors": 16,
+        "other_monetary": 25
+      },
+      {
+        "year": 2022,
+        "total": 50,
+        "central_bank": 0,
+        "general_government": 10,
+        "fdi_intercompany": 5,
+        "other_sectors": 12,
+        "other_monetary": 23
+      },
+      {
+        "year": 2023,
+        "total": 48,
+        "central_bank": 0,
+        "general_government": 9,
+        "fdi_intercompany": 5,
+        "other_sectors": 11,
+        "other_monetary": 23
+      },
+      {
+        "year": 2024,
+        "total": 48,
+        "central_bank": 0,
+        "general_government": 9,
+        "fdi_intercompany": 5,
+        "other_sectors": 11,
+        "other_monetary": 23
+      },
+      {
+        "year": 2025,
+        "total": 49.5,
+        "central_bank": 0,
+        "general_government": 10,
+        "fdi_intercompany": 6,
+        "other_sectors": 11,
+        "other_monetary": 22.5
+      }
+    ],
+    "unit": "% of GDP"
+  },
+  "deposits": {
+    "non_government_growth_jul_aug": 11.8,
+    "non_government_growth_jul_aug_unit": "%",
+    "non_government_growth_end_2024": 10.1,
+    "non_government_growth_end_2024_unit": "%",
+    "non_government_growth_jun_2025": 10.0,
+    "non_government_growth_jun_2025_unit": "%",
+    "note": "Acceleration driven by campaigns launched by certain commercial banks to deposit free cash balances in levs without a fee for automatic conversion into euro following Bulgaria's accession to the euro area from the beginning of 2026"
+  },
+  "credit": {
+    "household_growth_8_months": 20.8,
+    "household_growth_8_months_unit": "%",
+    "household_growth_end_2024": 20.8,
+    "household_growth_end_2024_unit": "%",
+    "housing_loans_contribution": "most",
+    "supporting_factors": [
+      "Rising labour income",
+      "Persistence of very low interest rates",
+      "High liquidity and sound capital position of banks"
+    ],
+    "lending_standards": "Unchanged standards for housing loans in Q2 2025 after significant tightening in Q4 2024 and Q1 2025"
+  },
+  "inflation": {
+    "hicp_aug_2025": 3.5,
+    "hicp_aug_2025_unit": "%",
+    "hicp_end_2024": 2.1,
+    "hicp_end_2024_unit": "%",
+    "q3_2025_avg": 3.5,
+    "q3_2025_avg_unit": "%",
+    "q2_2025_avg": 2.9,
+    "q2_2025_avg_unit": "%",
+    "main_contributors": [
+      "Food (6-7% annual inflation)",
+      "Services (6-7% annual inflation)"
+    ],
+    "main_factors": [
+      "Rising unit labour costs",
+      "Strong private consumption enabling firms to pass on higher production costs",
+      "Slower rate of price falls in energy products",
+      "Stronger price growth in food and administratively controlled prices"
+    ]
+  },
+  "interest_rates": {
+    "interbank_market": {
+      "title": "Interbank Money Market",
+      "leonia_plus_aug_2025": 1.82,
+      "leonia_plus_dec_2024": 2.95,
+      "spread_vs_estr": -11,
+      "spread_vs_estr_unit": "basis points",
+      "avg_daily_volume_aug": 433,
+      "avg_daily_volume_aug_unit": "BGN million",
+      "avg_daily_volume_dec": 477,
+      "avg_daily_volume_dec_unit": "BGN million",
+      "unit": "% and BGN million",
+      "note": "Activity remained relatively high. Factors: low levels of excess reserves with BNB (0% interest) and possibility of interest rate arbitrage"
+    },
+    "ecb_rates": {
+      "deposit_facility": 2.00,
+      "main_refinancing": 2.15,
+      "marginal_lending": 2.40,
+      "period": "Q2 2025",
+      "note": "ECB Governing Council kept rates unchanged, taking into account inflation dynamics and prospects for stabilization around target"
+    },
+    "fed_rates": {
+      "target_range_sep_2025": "4.00-4.25",
+      "target_range_sep_2025_unit": "%",
+      "change": -25,
+      "change_unit": "basis points",
+      "note": "Lowered by 25 basis points in September 2025, motivated by increased risks to US labour market developments"
+    },
+    "new_deposits_by_sector": {
+      "title": "Interest Rates on New Time Deposits by Sector",
+      "source": "BNB",
+      "data": [
+        {
+          "year": 2016,
+          "households": 0.8,
+          "average": 0.4,
+          "non_financial_corps": 0.5
+        },
+        {
+          "year": 2017,
+          "households": 0.5,
+          "average": 0.3,
+          "non_financial_corps": 0.3
+        },
+        {
+          "year": 2018,
+          "households": 0.3,
+          "average": 0.2,
+          "non_financial_corps": 0.2
+        },
+        {
+          "year": 2019,
+          "households": 0.2,
+          "average": 0.1,
+          "non_financial_corps": 0.1
+        },
+        {
+          "year": 2020,
+          "households": 0.1,
+          "average": 0.0,
+          "non_financial_corps": -0.1
+        },
+        {
+          "year": 2021,
+          "households": 0.1,
+          "average": 0.0,
+          "non_financial_corps": 0.0
+        },
+        {
+          "year": 2022,
+          "households": 0.4,
+          "average": 0.7,
+          "non_financial_corps": 1.1
+        },
+        {
+          "year": 2023,
+          "households": 1.8,
+          "average": 2.2,
+          "non_financial_corps": 2.9
+        },
+        {
+          "year": 2024,
+          "households": 1.35,
+          "average": 1.9,
+          "non_financial_corps": 2.13
+        },
+        {
+          "year": 2025,
+          "households": 0.95,
+          "average": 1.6,
+          "non_financial_corps": 1.75
+        }
+      ],
+      "unit": "%"
+    },
+    "household_loans": {
+      "title": "Interest Rates and APRC on New Household Loans",
+      "source": "BNB",
+      "data": [
+        {
+          "year": 2016,
+          "consumer_aprc": 11.2,
+          "consumer_rate": 9.5,
+          "housing_aprc": 6.0,
+          "housing_rate": 5.5
+        },
+        {
+          "year": 2017,
+          "consumer_aprc": 10.8,
+          "consumer_rate": 9.2,
+          "housing_aprc": 5.5,
+          "housing_rate": 5.0
+        },
+        {
+          "year": 2018,
+          "consumer_aprc": 10.5,
+          "consumer_rate": 9.0,
+          "housing_aprc": 4.0,
+          "housing_rate": 3.5
+        },
+        {
+          "year": 2019,
+          "consumer_aprc": 10.0,
+          "consumer_rate": 8.5,
+          "housing_aprc": 3.5,
+          "housing_rate": 3.0
+        },
+        {
+          "year": 2020,
+          "consumer_aprc": 12.0,
+          "consumer_rate": 8.2,
+          "housing_aprc": 3.2,
+          "housing_rate": 2.8
+        },
+        {
+          "year": 2021,
+          "consumer_aprc": 10.0,
+          "consumer_rate": 8.5,
+          "housing_aprc": 3.0,
+          "housing_rate": 2.6
+        },
+        {
+          "year": 2022,
+          "consumer_aprc": 9.5,
+          "consumer_rate": 8.8,
+          "housing_aprc": 2.8,
+          "housing_rate": 2.4
+        },
+        {
+          "year": 2023,
+          "consumer_aprc": 10.0,
+          "consumer_rate": 9.3,
+          "housing_aprc": 2.9,
+          "housing_rate": 2.5
+        },
+        {
+          "year": 2024,
+          "consumer_aprc": 10.63,
+          "consumer_rate": 9.98,
+          "housing_aprc": 2.82,
+          "housing_rate": 2.50
+        },
+        {
+          "year": 2025,
+          "consumer_aprc": 9.37,
+          "consumer_rate": 8.99,
+          "housing_aprc": 2.80,
+          "housing_rate": 2.46
+        }
+      ],
+      "unit": "%"
+    },
+    "corporate_loans": {
+      "title": "Interest Rate on New Loans to Non-financial Corporations",
+      "source": "BNB",
+      "data": [
+        {
+          "year": 2016,
+          "rate": 6.0
+        },
+        {
+          "year": 2017,
+          "rate": 5.0
+        },
+        {
+          "year": 2018,
+          "rate": 4.0
+        },
+        {
+          "year": 2019,
+          "rate": 3.0
+        },
+        {
+          "year": 2020,
+          "rate": 2.5
+        },
+        {
+          "year": 2021,
+          "rate": 2.4
+        },
+        {
+          "year": 2022,
+          "rate": 3.5
+        },
+        {
+          "year": 2023,
+          "rate": 5.0
+        },
+        {
+          "year": 2024,
+          "rate": 4.76
+        },
+        {
+          "year": 2025,
+          "rate": 4.13
+        }
+      ],
+      "unit": "%",
+      "notes": "Interest rate decreased by 62 basis points in first 8 months of 2025"
+    },
+    "convergence_rate": {
+      "title": "Long-term Interest Rate for Convergence Assessment",
+      "source": "BNB, ECB",
+      "bulgaria_rate_aug_2025": 3.93,
+      "spread_vs_germany": 126,
+      "spread_vs_germany_unit": "basis points",
+      "notes": "Rate unchanged since February 2024. Bulgaria's euro area accession announced for 1 January 2026.",
+      "data": [
+        {
+          "year": 2016,
+          "bulgaria": 2.5,
+          "germany": 0.4,
+          "spread": 210
+        },
+        {
+          "year": 2017,
+          "bulgaria": 2.0,
+          "germany": 0.3,
+          "spread": 170
+        },
+        {
+          "year": 2018,
+          "bulgaria": 1.2,
+          "germany": 0.5,
+          "spread": 70
+        },
+        {
+          "year": 2019,
+          "bulgaria": 0.8,
+          "germany": -0.5,
+          "spread": 130
+        },
+        {
+          "year": 2020,
+          "bulgaria": 0.5,
+          "germany": -0.5,
+          "spread": 100
+        },
+        {
+          "year": 2021,
+          "bulgaria": 0.6,
+          "germany": -0.3,
+          "spread": 90
+        },
+        {
+          "year": 2022,
+          "bulgaria": 2.1,
+          "germany": 1.4,
+          "spread": 70
+        },
+        {
+          "year": 2023,
+          "bulgaria": 4.0,
+          "germany": 2.5,
+          "spread": 150
+        },
+        {
+          "year": 2024,
+          "bulgaria": 3.93,
+          "germany": 2.5,
+          "spread": 143
+        },
+        {
+          "year": 2025,
+          "bulgaria": 3.93,
+          "germany": 2.67,
+          "spread": 126
+        }
+      ],
+      "unit": "% and basis points"
+    }
+  },
+  "global_context": {
+    "global_gdp_growth_q2_2025": 0.7,
+    "global_gdp_growth_q2_2025_unit": "% quarterly",
+    "global_gdp_growth_q1_2025": 0.5,
+    "global_gdp_growth_q1_2025_unit": "% quarterly",
+    "drivers": [
+      "Increased volatility in net exports and inventories of leading economies",
+      "Changes in US foreign trade policy"
+    ],
+    "pmi_signals": "Accelerated growth in Q3 2025",
+    "world_trade_growth_june": 3.1,
+    "world_trade_growth_june_unit": "% annual",
+    "world_trade_growth_march": 6.7,
+    "world_trade_growth_march_unit": "% annual",
+    "note": "Acceleration in Q1 2025 due to increased orders before higher tariffs on US imports entered into force, then gradual slowdown in Q2"
+  },
+  "commodity_prices": {
+    "energy_prices": "Continuous year-on-year decline",
+    "food_prices": "Continuous year-on-year decline",
+    "impact": "Precondition for favourable terms of trade for Bulgaria in Q3 2025, contributing to reduce trade balance deficit",
+    "global_inflation": "Accelerated in Q3 2025 in both developing and advanced economies despite declining commodity prices"
+  },
+  "projections": {
+    "q3_2025_gdp": "Slight acceleration in quarterly real GDP growth",
+    "q3_2025_drivers": [
+      "Private consumption will continue to play a key role",
+      "Positive impact on real exports of Bulgarian goods and services"
+    ],
+    "end_2025_early_2026": "Real GDP growth projected to continue to be supported mostly by domestic demand",
+    "net_exports_outlook": "Negative contribution expected to contract at end of 2025 and start contributing positively in early 2026"
+  }
+}
+

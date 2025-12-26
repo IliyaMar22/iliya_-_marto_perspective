@@ -9,6 +9,7 @@ import NavigationDots from './ui/NavigationDots';
 import RegionLegend from './ui/RegionLegend';
 import MetricsPanel from './ui/MetricsPanel';
 import BulgarianSVGMap from './map/BulgarianSVGMap';
+import FDIBySectorChart from './charts/FDIBySectorChart';
 import type { RegionData } from '../hooks/useMapData';
 
 interface RDData {
@@ -121,6 +122,33 @@ interface NaturalMovementData {
   };
 }
 
+interface FDIData {
+  source: string;
+  description: string;
+  unit: string;
+  years: number[];
+  last_updated: string;
+  sectors: Array<{
+    code: string;
+    name: string;
+    investments: {
+      [year: string]: number | null;
+    };
+  }>;
+}
+
+interface RegionalFDIData {
+  source: string;
+  description: string;
+  unit: string;
+  year: number;
+  regions: Array<{
+    code: string;
+    name: string;
+    fdi_2024: number;
+  }>;
+}
+
 export default function PerspectiveView() {
   useSmoothScroll();
   const currentSection = useScrollSection();
@@ -128,6 +156,8 @@ export default function PerspectiveView() {
   const [rdData, setRdData] = useState<RDExpenditureData | null>(null);
   const [populationData, setPopulationData] = useState<PopulationData[]>([]);
   const [naturalMovementData, setNaturalMovementData] = useState<NaturalMovementData[]>([]);
+  const [fdiData, setFdiData] = useState<FDIData | null>(null);
+  const [regionalFdiData, setRegionalFdiData] = useState<RegionalFDIData | null>(null);
   
   const { geoData, regionData, loading } = useMapData('bulgaria');
 
@@ -155,6 +185,22 @@ export default function PerspectiveView() {
       .catch((error) => console.error('Error loading natural movement data:', error));
   }, []);
 
+  // Load FDI data
+  useEffect(() => {
+    fetch('/data/fdi_by_sector.json')
+      .then((res) => res.json())
+      .then((data) => setFdiData(data))
+      .catch((error) => console.error('Error loading FDI data:', error));
+  }, []);
+
+  // Load regional FDI data
+  useEffect(() => {
+    fetch('/data/fdi_by_regions_2024.json')
+      .then((res) => res.json())
+      .then((data) => setRegionalFdiData(data))
+      .catch((error) => console.error('Error loading regional FDI data:', error));
+  }, []);
+
   const handleRegionClick = (region: RegionData) => {
     setSelectedRegion(region);
   };
@@ -179,6 +225,13 @@ export default function PerspectiveView() {
     return naturalMovementData.find(n => n.nuts_code.toUpperCase() === nutsCode.toUpperCase()) || null;
   };
 
+  // Get regional FDI data for a specific region
+  const getRegionFDI = (nutsCode: string): number | null => {
+    if (!regionalFdiData) return null;
+    const region = regionalFdiData.regions.find(r => r.code.toUpperCase() === nutsCode.toUpperCase());
+    return region ? region.fdi_2024 : null;
+  };
+
   // Format currency for display
   const formatRD = (value: number | null): string => {
     if (value === null) return '..';
@@ -198,8 +251,8 @@ export default function PerspectiveView() {
       {/* Navigation Dots */}
       <NavigationDots currentSection={currentSection} onNavigate={() => {}} />
 
-      {/* Region Legend */}
-      <RegionLegend />
+      {/* Region Legend - Only show when map section is visible */}
+      <RegionLegend visible={currentSection === 'bulgaria'} />
 
       {/* Metrics Panel */}
       {selectedRegion && (
@@ -222,11 +275,11 @@ export default function PerspectiveView() {
           <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
             An interactive journey through Bulgaria's economic landscape, from European context to regional insights
           </p>
-          <div className="flex gap-4 justify-center">
-            <button className="btn-primary">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
+            <button className="btn-primary w-full sm:w-auto px-6 py-3 text-sm sm:text-base">
               Explore Now
             </button>
-            <button className="btn-secondary">
+            <button className="btn-secondary w-full sm:w-auto px-6 py-3 text-sm sm:text-base">
               Learn More
             </button>
           </div>
@@ -245,12 +298,12 @@ export default function PerspectiveView() {
             <MainScene />
           </Suspense>
         </div>
-        <div className="relative z-10 container mx-auto px-6 py-20">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-hero text-lime-400 mb-8 text-center">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-lime-400 mb-6 sm:mb-8 text-center">
               Discover Bulgaria
             </h2>
-            <p className="text-xl text-gray-300 mb-12 text-center max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 sm:mb-12 text-center max-w-3xl mx-auto px-2">
               Explore regional development metrics, economic indicators, and growth opportunities across Bulgaria's dynamic regions
             </p>
             
@@ -293,6 +346,7 @@ export default function PerspectiveView() {
                 const rdRegionData = getRegionRD(region.id);
                 const populationRegionData = getRegionPopulation(region.nuts_code);
                 const naturalMovementRegionData = getRegionNaturalMovement(region.nuts_code);
+                const regionFDI = getRegionFDI(region.nuts_code);
                 const latestPopTrend = populationRegionData?.population_trend[populationRegionData.population_trend.length - 1];
                 const previousPopTrend = populationRegionData?.population_trend[populationRegionData.population_trend.length - 2];
                 
@@ -338,6 +392,14 @@ export default function PerspectiveView() {
                           {region.developmentLevel.toUpperCase()}
                         </span>
                       </div>
+                      {regionFDI !== null && (
+                        <div className="flex justify-between items-center">
+                          <span className="text-gray-400">FDI (2024):</span>
+                          <span className="font-mono text-yellow-400 font-semibold">
+                            €{(regionFDI / 1000000).toFixed(2)}B
+                          </span>
+                        </div>
+                      )}
                     </div>
                     
                     {/* Population Trends Section */}
@@ -494,6 +556,13 @@ export default function PerspectiveView() {
                 );
               })}
             </div>
+
+            {/* FDI by Sector Section */}
+            {fdiData && (
+              <div className="mt-16">
+                <FDIBySectorChart data={fdiData} />
+              </div>
+            )}
           </div>
         </div>
       </section>
