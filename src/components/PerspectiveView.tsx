@@ -72,11 +72,23 @@ const regionToMacroRegion: Record<string, string> = {
   'bg426': 'BG42', // Stara Zagora
 };
 
+interface PopulationData {
+  nuts_code: string;
+  name: string;
+  name_en: string;
+  population_trend: Array<{
+    year: number;
+    total: number;
+    change_pct: number | null;
+  }>;
+}
+
 export default function PerspectiveView() {
   useSmoothScroll();
   const currentSection = useScrollSection();
   const [selectedRegion, setSelectedRegion] = useState<RegionData | null>(null);
   const [rdData, setRdData] = useState<RDExpenditureData | null>(null);
+  const [populationData, setPopulationData] = useState<PopulationData[]>([]);
   
   const { geoData, regionData, loading } = useMapData('bulgaria');
 
@@ -86,6 +98,14 @@ export default function PerspectiveView() {
       .then((res) => res.json())
       .then((data) => setRdData(data))
       .catch((error) => console.error('Error loading R&D data:', error));
+  }, []);
+
+  // Load population trends data
+  useEffect(() => {
+    fetch('/data/population-trends-2015-2023.json')
+      .then((res) => res.json())
+      .then((data) => setPopulationData(data.regions || []))
+      .catch((error) => console.error('Error loading population data:', error));
   }, []);
 
   const handleRegionClick = (region: RegionData) => {
@@ -100,10 +120,21 @@ export default function PerspectiveView() {
     return rdData.macro_regions.find(r => r.nuts_code === macroRegionCode) || null;
   };
 
+  // Get population data for a specific region
+  const getRegionPopulation = (nutsCode: string): PopulationData | null => {
+    if (!populationData.length) return null;
+    return populationData.find(p => p.nuts_code.toUpperCase() === nutsCode.toUpperCase()) || null;
+  };
+
   // Format currency for display
   const formatRD = (value: number | null): string => {
     if (value === null) return '..';
     return `€${(value / 1000).toFixed(1)}M`;
+  };
+
+  // Format population number
+  const formatPopulation = (value: number): string => {
+    return value.toLocaleString('en-US');
   };
 
   return (
@@ -207,6 +238,10 @@ export default function PerspectiveView() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {regionData.map((region) => {
                 const rdRegionData = getRegionRD(region.id);
+                const populationRegionData = getRegionPopulation(region.nuts_code);
+                const latestPopTrend = populationRegionData?.population_trend[populationRegionData.population_trend.length - 1];
+                const previousPopTrend = populationRegionData?.population_trend[populationRegionData.population_trend.length - 2];
+                
                 return (
                   <div
                     key={region.id}
@@ -222,10 +257,22 @@ export default function PerspectiveView() {
                         </span>
                       </div>
                       <div className="flex justify-between items-center">
-                        <span className="text-gray-400">Population:</span>
-                        <span className="font-mono text-white font-semibold">
-                          {region.metrics.population.toLocaleString()}
-                        </span>
+                        <span className="text-gray-400">Population (2023):</span>
+                        <div className="flex flex-col items-end">
+                          <span className="font-mono text-white font-semibold">
+                            {latestPopTrend ? formatPopulation(latestPopTrend.total) : region.metrics.population.toLocaleString()}
+                          </span>
+                          {latestPopTrend && latestPopTrend.change_pct !== null && (
+                            <span className={`text-xs font-mono ${
+                              latestPopTrend.change_pct > 0 ? 'text-lime-400' : 
+                              latestPopTrend.change_pct < 0 ? 'text-pink-400' : 
+                              'text-gray-400'
+                            }`}>
+                              {latestPopTrend.change_pct > 0 ? '↑' : latestPopTrend.change_pct < 0 ? '↓' : '→'} 
+                              {Math.abs(latestPopTrend.change_pct).toFixed(2)}%
+                            </span>
+                          )}
+                        </div>
                       </div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-400">Development:</span>
@@ -238,6 +285,55 @@ export default function PerspectiveView() {
                         </span>
                       </div>
                     </div>
+                    
+                    {/* Population Trends Section */}
+                    {populationRegionData && (
+                      <div className="mt-4 pt-4 border-t border-cyan-400/30">
+                        <div className="flex items-center justify-between mb-3">
+                          <span className="text-sm font-bold text-cyan-400">📊 Population Trend (2015-2023)</span>
+                        </div>
+                        <div className="space-y-2">
+                          <div className="flex justify-between items-center text-xs">
+                            <span className="text-gray-500">2015:</span>
+                            <span className="font-mono text-gray-400">
+                              {formatPopulation(populationRegionData.population_trend[0].total)}
+                            </span>
+                          </div>
+                          <div className="flex justify-between items-center text-xs">
+                            <span className="text-gray-500">2023:</span>
+                            <span className="font-mono text-white font-semibold">
+                              {formatPopulation(latestPopTrend!.total)}
+                            </span>
+                          </div>
+                          <div className="flex justify-between items-center text-xs">
+                            <span className="text-gray-500">Total Change:</span>
+                            <span className={`font-mono font-semibold ${
+                              ((latestPopTrend!.total - populationRegionData.population_trend[0].total) / populationRegionData.population_trend[0].total * 100) > 0 
+                                ? 'text-lime-400' 
+                                : 'text-pink-400'
+                            }`}>
+                              {((latestPopTrend!.total - populationRegionData.population_trend[0].total) / populationRegionData.population_trend[0].total * 100).toFixed(2)}%
+                            </span>
+                          </div>
+                          {/* Mini sparkline visualization */}
+                          <div className="h-8 flex items-end justify-between gap-0.5 mt-2">
+                            {populationRegionData.population_trend.slice(-5).map((trend, idx) => {
+                              const maxPop = Math.max(...populationRegionData.population_trend.map(t => t.total));
+                              const minPop = Math.min(...populationRegionData.population_trend.map(t => t.total));
+                              const height = ((trend.total - minPop) / (maxPop - minPop)) * 100;
+                              return (
+                                <div
+                                  key={idx}
+                                  className="flex-1 bg-cyan-400/60 hover:bg-cyan-400 transition-all rounded-t"
+                                  style={{ height: `${Math.max(height, 20)}%` }}
+                                  title={`${trend.year}: ${formatPopulation(trend.total)}`}
+                                />
+                              );
+                            })}
+                          </div>
+                        </div>
+                      </div>
+                    )}
                     
                     {/* R&D Expenditure Section */}
                     {rdRegionData && (

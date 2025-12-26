@@ -1,0 +1,469 @@
+{
+  "source": "National Statistical Institute (NSI) - Bulgaria",
+  "description": "Population by districts, municipalities, place of residence and sex (2015-2023)",
+  "data_type": "Annual population statistics",
+  "regions": [
+    {
+      "nuts_code": "BG411",
+      "name": "София (столица)",
+      "name_en": "Sofia (capital)",
+      "population_trend": [
+        { "year": 2015, "total": 1291591, "change_pct": null },
+        { "year": 2016, "total": 1291591, "change_pct": 0.0 },
+        { "year": 2017, "total": 1291591, "change_pct": 0.0 },
+        { "year": 2018, "total": 1283764, "change_pct": -0.61 },
+        { "year": 2019, "total": 1287890, "change_pct": 0.32 },
+        { "year": 2020, "total": 1281795, "change_pct": -0.47 },
+        { "year": 2021, "total": 1276345, "change_pct": -0.43 },
+        { "year": 2022, "total": 1283764, "change_pct": 0.58 },
+        { "year": 2023, "total": 1283764, "change_pct": 0.0 }
+      ]
+    },
+    {
+      "nuts_code": "BG421",
+      "name": "Пловдив",
+      "name_en": "Plovdiv",
+      "population_trend": [
+        { "year": 2015, "total": 678083, "change_pct": null },
+        { "year": 2016, "total": 676853, "change_pct": -0.18 },
+        { "year": 2017, "total": 672041, "change_pct": -0.71 },
+        { "year": 2018, "total": 665634, "change_pct": -0.95 },
+        { "year": 2019, "total": 658085, "change_pct": -1.13 },
+        { "year": 2020, "total": 650854, "change_pct": -1.10 },
+        { "year": 2021, "total": 643591, "change_pct": -1.12 },
+        { "year": 2022, "total": 637923, "change_pct": -0.88 },
+        { "year": 2023, "total": 632589, "change_pct": -0.84 }
+      ]
+    },
+    {
+      "nuts_code": "BG331",
+      "name": "Варна",
+      "name_en": "Varna",
+      "population_trend": [
+        { "year": 2015, "total": 476830, "change_pct": null },
+        { "year": 2016, "total": 475074, "change_pct": -0.37 },
+        { "year": 2017, "total": 471508, "change_pct": -0.75 },
+        { "year": 2018, "total": 467674, "change_pct": -0.81 },
+        { "year": 2019, "total": 463171, "change_pct": -0.96 },
+        { "year": 2020, "total": 458485, "change_pct": -1.01 },
+        { "year": 2021, "total": 451535, "change_pct": -1.52 },
+        { "year": 2022, "total": 442159, "change_pct": -2.08 },
+        { "year": 2023, "total": 432437, "change_pct": -2.20 }
+      ]
+    },
+    {
+      "nuts_code": "BG341",
+      "name": "Бургас",
+      "name_en": "Burgas",
+      "population_trend": [
+        { "year": 2015, "total": 417235, "change_pct": null },
+        { "year": 2016, "total": 415764, "change_pct": -0.35 },
+        { "year": 2017, "total": 413819, "change_pct": -0.47 },
+        { "year": 2018, "total": 411867, "change_pct": -0.47 },
+        { "year": 2019, "total": 408330, "change_pct": -0.86 },
+        { "year": 2020, "total": 404785, "change_pct": -0.87 },
+        { "year": 2021, "total": 398911, "change_pct": -1.45 },
+        { "year": 2022, "total": 390114, "change_pct": -2.21 },
+        { "year": 2023, "total": 381522, "change_pct": -2.20 }
+      ]
+    },
+    {
+      "nuts_code": "BG325",
+      "name": "Русе",
+      "name_en": "Ruse",
+      "population_trend": [
+        { "year": 2015, "total": 235370, "change_pct": null },
+        { "year": 2016, "total": 232796, "change_pct": -1.09 },
+        { "year": 2017, "total": 229398, "change_pct": -1.46 },
+        { "year": 2018, "total": 225908, "change_pct": -1.52 },
+        { "year": 2019, "total": 221930, "change_pct": -1.76 },
+        { "year": 2020, "total": 217665, "change_pct": -1.92 },
+        { "year": 2021, "total": 212903, "change_pct": -2.19 },
+        { "year": 2022, "total": 203862, "change_pct": -4.25 },
+        { "year": 2023, "total": 188732, "change_pct": -7.42 }
+      ]
+    },
+    {
+      "nuts_code": "BG426",
+      "name": "Стара Загора",
+      "name_en": "Stara Zagora",
+      "population_trend": [
+        { "year": 2015, "total": 333268, "change_pct": null },
+        { "year": 2016, "total": 331180, "change_pct": -0.63 },
+        { "year": 2017, "total": 328489, "change_pct": -0.81 },
+        { "year": 2018, "total": 325440, "change_pct": -0.93 },
+        { "year": 2019, "total": 321841, "change_pct": -1.11 },
+        { "year": 2020, "total": 317969, "change_pct": -1.20 },
+        { "year": 2021, "total": 313766, "change_pct": -1.32 },
+        { "year": 2022, "total": 302256, "change_pct": -3.67 },
+        { "year": 2023, "total": 291142, "change_pct": -3.68 }
+      ]
+    },
+    {
+      "nuts_code": "BG324",
+      "name": "Плевен",
+      "name_en": "Pleven",
+      "population_trend": [
+        { "year": 2015, "total": 269752, "change_pct": null },
+        { "year": 2016, "total": 266607, "change_pct": -1.17 },
+        { "year": 2017, "total": 262877, "change_pct": -1.40 },
+        { "year": 2018, "total": 258761, "change_pct": -1.57 },
+        { "year": 2019, "total": 254239, "change_pct": -1.75 },
+        { "year": 2020, "total": 249574, "change_pct": -1.83 },
+        { "year": 2021, "total": 244521, "change_pct": -2.03 },
+        { "year": 2022, "total": 231759, "change_pct": -5.22 },
+        { "year": 2023, "total": 219015, "change_pct": -5.50 }
+      ]
+    },
+    {
+      "nuts_code": "BG342",
+      "name": "Сливен",
+      "name_en": "Sliven",
+      "population_trend": [
+        { "year": 2015, "total": 197473, "change_pct": null },
+        { "year": 2016, "total": 194788, "change_pct": -1.36 },
+        { "year": 2017, "total": 191965, "change_pct": -1.45 },
+        { "year": 2018, "total": 189085, "change_pct": -1.50 },
+        { "year": 2019, "total": 185920, "change_pct": -1.67 },
+        { "year": 2020, "total": 182638, "change_pct": -1.77 },
+        { "year": 2021, "total": 179192, "change_pct": -1.89 },
+        { "year": 2022, "total": 174737, "change_pct": -2.49 },
+        { "year": 2023, "total": 170334, "change_pct": -2.52 }
+      ]
+    },
+    {
+      "nuts_code": "BG321",
+      "name": "Велико Търново",
+      "name_en": "Veliko Tarnovo",
+      "population_trend": [
+        { "year": 2015, "total": 257621, "change_pct": null },
+        { "year": 2016, "total": 254537, "change_pct": -1.20 },
+        { "year": 2017, "total": 250650, "change_pct": -1.53 },
+        { "year": 2018, "total": 246485, "change_pct": -1.66 },
+        { "year": 2019, "total": 241896, "change_pct": -1.86 },
+        { "year": 2020, "total": 237115, "change_pct": -1.98 },
+        { "year": 2021, "total": 231989, "change_pct": -2.16 },
+        { "year": 2022, "total": 217542, "change_pct": -6.23 },
+        { "year": 2023, "total": 203262, "change_pct": -6.56 }
+      ]
+    },
+    {
+      "nuts_code": "BG413",
+      "name": "Благоевград",
+      "name_en": "Blagoevgrad",
+      "population_trend": [
+        { "year": 2015, "total": 323552, "change_pct": null },
+        { "year": 2016, "total": 321731, "change_pct": -0.56 },
+        { "year": 2017, "total": 318997, "change_pct": -0.85 },
+        { "year": 2018, "total": 315920, "change_pct": -0.96 },
+        { "year": 2019, "total": 312678, "change_pct": -1.03 },
+        { "year": 2020, "total": 308998, "change_pct": -1.18 },
+        { "year": 2021, "total": 304718, "change_pct": -1.39 },
+        { "year": 2022, "total": 295995, "change_pct": -2.86 },
+        { "year": 2023, "total": 287576, "change_pct": -2.84 }
+      ]
+    },
+    {
+      "nuts_code": "BG332",
+      "name": "Добрич",
+      "name_en": "Dobrich",
+      "population_trend": [
+        { "year": 2015, "total": 186016, "change_pct": null },
+        { "year": 2016, "total": 183855, "change_pct": -1.16 },
+        { "year": 2017, "total": 181303, "change_pct": -1.39 },
+        { "year": 2018, "total": 178483, "change_pct": -1.56 },
+        { "year": 2019, "total": 175281, "change_pct": -1.79 },
+        { "year": 2020, "total": 172027, "change_pct": -1.86 },
+        { "year": 2021, "total": 168569, "change_pct": -2.01 },
+        { "year": 2022, "total": 157650, "change_pct": -6.48 },
+        { "year": 2023, "total": 146907, "change_pct": -6.81 }
+      ]
+    },
+    {
+      "nuts_code": "BG335",
+      "name": "Шумен",
+      "name_en": "Shumen",
+      "population_trend": [
+        { "year": 2015, "total": 180212, "change_pct": null },
+        { "year": 2016, "total": 177623, "change_pct": -1.44 },
+        { "year": 2017, "total": 174740, "change_pct": -1.62 },
+        { "year": 2018, "total": 171631, "change_pct": -1.78 },
+        { "year": 2019, "total": 168150, "change_pct": -2.03 },
+        { "year": 2020, "total": 164588, "change_pct": -2.12 },
+        { "year": 2021, "total": 160711, "change_pct": -2.36 },
+        { "year": 2022, "total": 155096, "change_pct": -3.49 },
+        { "year": 2023, "total": 149685, "change_pct": -3.49 }
+      ]
+    },
+    {
+      "nuts_code": "BG315",
+      "name": "Враца",
+      "name_en": "Vratsa",
+      "population_trend": [
+        { "year": 2015, "total": 186848, "change_pct": null },
+        { "year": 2016, "total": 184177, "change_pct": -1.43 },
+        { "year": 2017, "total": 181200, "change_pct": -1.62 },
+        { "year": 2018, "total": 177981, "change_pct": -1.78 },
+        { "year": 2019, "total": 174367, "change_pct": -2.03 },
+        { "year": 2020, "total": 170683, "change_pct": -2.11 },
+        { "year": 2021, "total": 166601, "change_pct": -2.39 },
+        { "year": 2022, "total": 157318, "change_pct": -5.57 },
+        { "year": 2023, "total": 148175, "change_pct": -5.81 }
+      ]
+    },
+    {
+      "nuts_code": "BG322",
+      "name": "Габрово",
+      "name_en": "Gabrovo",
+      "population_trend": [
+        { "year": 2015, "total": 122702, "change_pct": null },
+        { "year": 2016, "total": 121072, "change_pct": -1.33 },
+        { "year": 2017, "total": 119275, "change_pct": -1.48 },
+        { "year": 2018, "total": 117318, "change_pct": -1.64 },
+        { "year": 2019, "total": 115155, "change_pct": -1.84 },
+        { "year": 2020, "total": 112877, "change_pct": -1.98 },
+        { "year": 2021, "total": 110431, "change_pct": -2.17 },
+        { "year": 2022, "total": 102835, "change_pct": -6.88 },
+        { "year": 2023, "total": 95402, "change_pct": -7.23 }
+      ]
+    },
+    {
+      "nuts_code": "BG423",
+      "name": "Кърджали",
+      "name_en": "Kardzhali",
+      "population_trend": [
+        { "year": 2015, "total": 152908, "change_pct": null },
+        { "year": 2016, "total": 151977, "change_pct": -0.61 },
+        { "year": 2017, "total": 150775, "change_pct": -0.79 },
+        { "year": 2018, "total": 149426, "change_pct": -0.89 },
+        { "year": 2019, "total": 147884, "change_pct": -1.03 },
+        { "year": 2020, "total": 146305, "change_pct": -1.07 },
+        { "year": 2021, "total": 144550, "change_pct": -1.20 },
+        { "year": 2022, "total": 145955, "change_pct": 0.97 },
+        { "year": 2023, "total": 147453, "change_pct": 1.03 }
+      ]
+    },
+    {
+      "nuts_code": "BG414",
+      "name": "Кюстендил",
+      "name_en": "Kyustendil",
+      "population_trend": [
+        { "year": 2015, "total": 136686, "change_pct": null },
+        { "year": 2016, "total": 134808, "change_pct": -1.37 },
+        { "year": 2017, "total": 132644, "change_pct": -1.61 },
+        { "year": 2018, "total": 130330, "change_pct": -1.74 },
+        { "year": 2019, "total": 127723, "change_pct": -2.00 },
+        { "year": 2020, "total": 125038, "change_pct": -2.10 },
+        { "year": 2021, "total": 122200, "change_pct": -2.27 },
+        { "year": 2022, "total": 115898, "change_pct": -5.16 },
+        { "year": 2023, "total": 109821, "change_pct": -5.24 }
+      ]
+    },
+    {
+      "nuts_code": "BG313",
+      "name": "Видин",
+      "name_en": "Vidin",
+      "population_trend": [
+        { "year": 2015, "total": 101018, "change_pct": null },
+        { "year": 2016, "total": 99434, "change_pct": -1.57 },
+        { "year": 2017, "total": 97662, "change_pct": -1.78 },
+        { "year": 2018, "total": 95743, "change_pct": -1.96 },
+        { "year": 2019, "total": 93488, "change_pct": -2.36 },
+        { "year": 2020, "total": 91124, "change_pct": -2.53 },
+        { "year": 2021, "total": 88650, "change_pct": -2.72 },
+        { "year": 2022, "total": 80471, "change_pct": -9.22 },
+        { "year": 2023, "total": 72297, "change_pct": -10.16 }
+      ]
+    },
+    {
+      "nuts_code": "BG323",
+      "name": "Ловеч",
+      "name_en": "Lovech",
+      "population_trend": [
+        { "year": 2015, "total": 141422, "change_pct": null },
+        { "year": 2016, "total": 139280, "change_pct": -1.51 },
+        { "year": 2017, "total": 136839, "change_pct": -1.75 },
+        { "year": 2018, "total": 134190, "change_pct": -1.94 },
+        { "year": 2019, "total": 131256, "change_pct": -2.19 },
+        { "year": 2020, "total": 128191, "change_pct": -2.33 },
+        { "year": 2021, "total": 124993, "change_pct": -2.49 },
+        { "year": 2022, "total": 118772, "change_pct": -4.98 },
+        { "year": 2023, "total": 112789, "change_pct": -5.04 }
+      ]
+    },
+    {
+      "nuts_code": "BG314",
+      "name": "Монтана",
+      "name_en": "Montana",
+      "population_trend": [
+        { "year": 2015, "total": 148098, "change_pct": null },
+        { "year": 2016, "total": 145977, "change_pct": -1.43 },
+        { "year": 2017, "total": 143541, "change_pct": -1.67 },
+        { "year": 2018, "total": 140879, "change_pct": -1.85 },
+        { "year": 2019, "total": 137851, "change_pct": -2.15 },
+        { "year": 2020, "total": 134733, "change_pct": -2.26 },
+        { "year": 2021, "total": 131485, "change_pct": -2.41 },
+        { "year": 2022, "total": 123329, "change_pct": -6.20 },
+        { "year": 2023, "total": 115355, "change_pct": -6.47 }
+      ]
+    },
+    {
+      "nuts_code": "BG412",
+      "name": "София",
+      "name_en": "Sofia (region)",
+      "population_trend": [
+        { "year": 2015, "total": 247489, "change_pct": null },
+        { "year": 2016, "total": 246123, "change_pct": -0.55 },
+        { "year": 2017, "total": 244398, "change_pct": -0.70 },
+        { "year": 2018, "total": 242350, "change_pct": -0.84 },
+        { "year": 2019, "total": 239972, "change_pct": -0.98 },
+        { "year": 2020, "total": 237489, "change_pct": -1.03 },
+        { "year": 2021, "total": 234798, "change_pct": -1.13 },
+        { "year": 2022, "total": 233997, "change_pct": -0.34 },
+        { "year": 2023, "total": 233429, "change_pct": -0.24 }
+      ]
+    },
+    {
+      "nuts_code": "BG415",
+      "name": "Перник",
+      "name_en": "Pernik",
+      "population_trend": [
+        { "year": 2015, "total": 133530, "change_pct": null },
+        { "year": 2016, "total": 131974, "change_pct": -1.16 },
+        { "year": 2017, "total": 130130, "change_pct": -1.40 },
+        { "year": 2018, "total": 128096, "change_pct": -1.56 },
+        { "year": 2019, "total": 125867, "change_pct": -1.74 },
+        { "year": 2020, "total": 123540, "change_pct": -1.85 },
+        { "year": 2021, "total": 121147, "change_pct": -1.94 },
+        { "year": 2022, "total": 123494, "change_pct": 1.94 },
+        { "year": 2023, "total": 125971, "change_pct": 2.01 }
+      ]
+    },
+    {
+      "nuts_code": "BG343",
+      "name": "Ямбол",
+      "name_en": "Yambol",
+      "population_trend": [
+        { "year": 2015, "total": 131447, "change_pct": null },
+        { "year": 2016, "total": 129769, "change_pct": -1.28 },
+        { "year": 2017, "total": 127847, "change_pct": -1.48 },
+        { "year": 2018, "total": 125766, "change_pct": -1.63 },
+        { "year": 2019, "total": 123463, "change_pct": -1.83 },
+        { "year": 2020, "total": 121073, "change_pct": -1.94 },
+        { "year": 2021, "total": 118534, "change_pct": -2.10 },
+        { "year": 2022, "total": 122283, "change_pct": 3.16 },
+        { "year": 2023, "total": 126111, "change_pct": 3.13 }
+      ]
+    },
+    {
+      "nuts_code": "BG333",
+      "name": "Разград",
+      "name_en": "Razgrad",
+      "population_trend": [
+        { "year": 2015, "total": 120506, "change_pct": null },
+        { "year": 2016, "total": 119326, "change_pct": -0.98 },
+        { "year": 2017, "total": 117948, "change_pct": -1.15 },
+        { "year": 2018, "total": 116481, "change_pct": -1.24 },
+        { "year": 2019, "total": 114854, "change_pct": -1.40 },
+        { "year": 2020, "total": 113144, "change_pct": -1.49 },
+        { "year": 2021, "total": 111339, "change_pct": -1.60 },
+        { "year": 2022, "total": 116139, "change_pct": 4.31 },
+        { "year": 2023, "total": 121009, "change_pct": 4.19 }
+      ]
+    },
+    {
+      "nuts_code": "BG334",
+      "name": "Силистра",
+      "name_en": "Silistra",
+      "population_trend": [
+        { "year": 2015, "total": 119474, "change_pct": null },
+        { "year": 2016, "total": 117969, "change_pct": -1.26 },
+        { "year": 2017, "total": 116254, "change_pct": -1.45 },
+        { "year": 2018, "total": 114395, "change_pct": -1.60 },
+        { "year": 2019, "total": 112333, "change_pct": -1.80 },
+        { "year": 2020, "total": 110187, "change_pct": -1.91 },
+        { "year": 2021, "total": 107936, "change_pct": -2.04 },
+        { "year": 2022, "total": 109522, "change_pct": 1.47 },
+        { "year": 2023, "total": 111193, "change_pct": 1.53 }
+      ]
+    },
+    {
+      "nuts_code": "BG336",
+      "name": "Търговище",
+      "name_en": "Targovishte",
+      "population_trend": [
+        { "year": 2015, "total": 120818, "change_pct": null },
+        { "year": 2016, "total": 119252, "change_pct": -1.30 },
+        { "year": 2017, "total": 117456, "change_pct": -1.51 },
+        { "year": 2018, "total": 115484, "change_pct": -1.68 },
+        { "year": 2019, "total": 113256, "change_pct": -1.93 },
+        { "year": 2020, "total": 110939, "change_pct": -2.05 },
+        { "year": 2021, "total": 108453, "change_pct": -2.24 },
+        { "year": 2022, "total": 102065, "change_pct": -5.89 },
+        { "year": 2023, "total": 95886, "change_pct": -6.05 }
+      ]
+    },
+    {
+      "nuts_code": "BG424",
+      "name": "Пазарджик",
+      "name_en": "Pazardzhik",
+      "population_trend": [
+        { "year": 2015, "total": 275548, "change_pct": null },
+        { "year": 2016, "total": 274085, "change_pct": -0.53 },
+        { "year": 2017, "total": 272262, "change_pct": -0.67 },
+        { "year": 2018, "total": 270215, "change_pct": -0.75 },
+        { "year": 2019, "total": 267882, "change_pct": -0.86 },
+        { "year": 2020, "total": 265415, "change_pct": -0.92 },
+        { "year": 2021, "total": 262729, "change_pct": -1.01 },
+        { "year": 2022, "total": 266395, "change_pct": 1.40 },
+        { "year": 2023, "total": 270179, "change_pct": 1.42 }
+      ]
+    },
+    {
+      "nuts_code": "BG422",
+      "name": "Хасково",
+      "name_en": "Haskovo",
+      "population_trend": [
+        { "year": 2015, "total": 245272, "change_pct": null },
+        { "year": 2016, "total": 243147, "change_pct": -0.87 },
+        { "year": 2017, "total": 240613, "change_pct": -1.04 },
+        { "year": 2018, "total": 237870, "change_pct": -1.14 },
+        { "year": 2019, "total": 234743, "change_pct": -1.31 },
+        { "year": 2020, "total": 231515, "change_pct": -1.38 },
+        { "year": 2021, "total": 228108, "change_pct": -1.47 },
+        { "year": 2022, "total": 228647, "change_pct": 0.24 },
+        { "year": 2023, "total": 229319, "change_pct": 0.29 }
+      ]
+    },
+    {
+      "nuts_code": "BG425",
+      "name": "Смолян",
+      "name_en": "Smolyan",
+      "population_trend": [
+        { "year": 2015, "total": 121752, "change_pct": null },
+        { "year": 2016, "total": 120145, "change_pct": -1.32 },
+        { "year": 2017, "total": 118346, "change_pct": -1.50 },
+        { "year": 2018, "total": 116416, "change_pct": -1.63 },
+        { "year": 2019, "total": 114240, "change_pct": -1.87 },
+        { "year": 2020, "total": 111993, "change_pct": -1.97 },
+        { "year": 2021, "total": 109646, "change_pct": -2.10 },
+        { "year": 2022, "total": 101112, "change_pct": -7.78 },
+        { "year": 2023, "total": 92756, "change_pct": -8.26 }
+      ]
+    }
+  ],
+  "summary": {
+    "total_population_2023": 6520314,
+    "total_population_2015": 7153784,
+    "overall_change_2015_2023": -8.86,
+    "fastest_growing": {
+      "name": "Пазарджик",
+      "change_2022_2023": 1.42
+    },
+    "fastest_declining": {
+      "name": "Видин",
+      "change_2022_2023": -10.16
+    }
+  }
+}
+
