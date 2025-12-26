@@ -1,6 +1,6 @@
 import { useRef, useEffect, useState } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { Text } from '@react-three/drei';
+// import { Text } from '@react-three/drei'; // Temporarily disabled due to compatibility issues
 import * as THREE from 'three';
 import gsap from 'gsap';
 
@@ -52,7 +52,8 @@ export default function RegionalDetailsScene() {
               emissiveIntensity={selectedRegion === i ? 0.8 : 0.3}
             />
           </mesh>
-          <Text
+          {/* Text component temporarily disabled due to compatibility issues */}
+          {/* <Text
             position={[0, 1.5, 0]}
             fontSize={0.3}
             color="white"
@@ -60,7 +61,7 @@ export default function RegionalDetailsScene() {
             anchorY="middle"
           >
             {region.name}
-          </Text>
+          </Text> */}
         </group>
       ))}
     </group>
